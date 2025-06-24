@@ -1,0 +1,104 @@
+@charset "UTF-8";
+*, ::before, ::after {box-sizing: border-box;-webkit-box-sizing: border-box;margin: 0;padding:0;}
+html {height: 100%;-webkit-text-size-adjust: 100%;scroll-behavior: smooth;}
+body {width: 100%;;word-break: keep-all;}
+a {color: inherit;text-decoration: none;cursor: pointer;}
+body, h1, h2, h3, h4, h5, h6, ul, dl, ol, div, p, figure {margin: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight:700;color: inherit;}
+/*ul, dl, ol {padding: 0;}
+dd {margin-left:0;}*/
+li {list-style: none;}
+form {width: 100%;margin:0 auto;}
+fieldset {margin: auto;padding: 0;border: 0;}
+legend {font-size: 0; line-height:0; text-indent:-9999px;}
+input:focus, button:focus, textarea:focus, select:focus {outline-width:none;}
+select {border-color: transparent;}
+select::-ms-expand {display: none;}
+button {padding: 0;border-color: transparent;cursor: pointer; background: none;}
+button, textarea, pre, code {font-family: inherit;font-size: inherit;}
+pre {white-space: pre-wrap;}
+pre, code {margin: 0;padding: 0;}
+textarea {overflow: auto;resize: none;}
+i, em {font-style: normal;}
+strong{font-weight: 600;}
+caption {display: none;}
+table {width: 100%;border-spacing: 0;border-collapse: collapse;table-layout: fixed;empty-cells: show;}
+th, td {background-clip: padding-box !important;}
+address {font-style: normal;}
+label{cursor: default;}
+/** basic **/
+.hidden {visibility: hidden;position: absolute;left: -9000px;top: -9000px;}
+.show{visibility:visible;position: relative;left:auto;top:auto}
+.cursor {cursor: pointer;}
+
+/** border **/
+.bdlNo {border-left: 0 !important;}
+.bdrNo {border-right: 0 !important;}
+.bdtNo {border-top: 0 !important;}
+.bdbNo {border-bottom: 0 !important;}
+.bdNo{border: 0 !important;}
+
+/** align **/
+.l,.tl {text-align: left !important;}
+.c,.tc {text-align: center !important;}
+.r,.tr {text-align: right !important;}
+.t,.vt {vertical-align: top !important;}
+.m,.vm {vertical-align: middle !important;}
+.b,.vb {vertical-align: bottom !important;}
+.ac {align-items:center !important;}
+.at {align-items:flex-start !important;}
+.ab {align-items:flex-end !important;}
+.an {align-items:normal !important;}
+.jc{justify-content:center !important;}
+.jl {justify-content:flex-start !important;}
+.jr {justify-content:flex-end !important;}
+.jb {justify-content:space-between !important;}
+.jn {justify-content:normal !important;}
+.fl {float: left !important;}
+.fr {float: right !important;}
+
+/** clear **/
+.clear::after {content: '';display:table;clear: both;min-height:1px;;}
+
+/*** form ***/
+fieldset {border: none;}
+legend {display: none;}
+input, select, button, .btn {vertical-align: middle;}
+img{vertical-align:top;max-width:100%;}
+/** display **/
+.dNone {display: none !important;}
+.dInblock{display:inline-block !important;}
+.dInline{display:inline !important;}
+.dBlock{display:block !important;}
+.dFlex{display:flex !important;}
+.dInflex{display:inline-flex !important;}
+/*** skip ***/
+#skipNavi {overflow: hidden;position: relative;width: 100%;z-index: 2;}
+#skipNavi a {display: block;overflow: hidden;width: 0rem;height: 0rem;margin: 0 -0.1rem -0.1rem 0;font-size: 0;line-height: 0;text-align: center;}
+#skipNavi:focus {overflow: hidden;height: 10rem;font-size: 1.4rem;font-weight: 700;background:var(--bakbg);}
+#skipNavi a:focus, #skipNavi a:hover, #skipNavi a:active {width: auto;height: 3rem;margin: 0;padding: 0.8rem 0 0 1.5rem;font-size: 1.4rem;font-weight: bold;line-height: 1;color:var(--white);background:var(--bakbg);} 
+/*** index button ***/
+.draft{text-align: center; display: flex; align-items: center; justify-content: center; height:100vh; gap:3rem}
+.draft .logo{position: absolute;top:30%;left:50%;transform: translateX(-50%);}
+.draft a{border-radius:var(--rd20);border:2px solid (var(--white)CE);font-size: 2rem; color:var(--white);flex:1 1 auto; max-width: 30%; height:10rem;display: flex; align-items: center;justify-content: center;transition: .2s;} 
+.draft a:hover{box-shadow: 0 0 2rem (var(--white)E2);font-size:220%}
+/* width(%) */
+.wd10{width:10% !important}
+.wd15{width:15% !important}
+.wd20{width:20% !important}
+.wd25{width:25% !important}
+.wd30{width:30% !important}
+.wd35{width:35% !important}
+.wd40{width:40% !important}
+.wd45{width:45% !important}
+.wd50{width:50% !important}
+.wd55{width:55% !important}
+.wd60{width:60% !important}
+.wd65{width:65% !important}
+.wd70{width:70% !important}
+.wd75{width:75% !important}
+.wd80{width:80% !important}
+.wd85{width:85% !important}
+.wd90{width:90% !important}
+.wd95{width:95% !important}
+.wd100{width:100% !important}

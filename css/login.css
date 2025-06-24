@@ -1,0 +1,31 @@
+body{background:url(../images/bg.webp) no-repeat 0 50%; background-size: cover;}
+#container{background:none;min-height: 100vh !important;padding-top: 0 !important;align-items:center;}
+#container > .inner{display:flex;width: 100%;align-items:space-between;justify-content:space-between;min-height: 100%}
+
+.sign{display: flex;flex-direction: column;justify-content:space-between;min-height: 100%;color: rgb(var(--white)); align-items: flex-start;}
+.lgTit{font-size:130%;font-weight: 300;}
+.lgTit em{font-size:0;background:url(../images/kdn_w.png) no-repeat 0 40%; background-size:100% auto; width:12rem;height:3.5rem; display: block;}
+.lgTit *{display: block;}
+.lgTit p{font-size:180% ;}
+.lgTit strong{font-weight: 700; font-size:250%; line-height:1.2;margin-bottom: var(--spacer4);color:#B5E8FF}
+
+.sign .btmBox{background:#001E72;border-radius: 5rem;opacity: .7; width: auto;font-size:75%;display: flex;padding:var(--spacer4) var(--spacer10);gap:var(--spacer4);align-items: center;}
+.sign .btmBox strong::before{content:'\F25F';font-family:var(--ifont1);display:block;text-align:center;font-size: 150%;line-height: 1.3;}
+.sign .btmBox p{line-height:1.9;font-weight:300}
+.sign .btmBox span{font-weight:600;}
+
+.logFrm{background:rgb(var(--white));padding:var(--spacer10);width:50%;max-width: 50rem;border-radius:12rem 5rem;gap:var(--spacer10);display: flex;flex-direction: column;text-align: center; margin-right: 0;}
+.logFrm h2{font-size:190%; text-align: center;}
+.logFrm form{display: flex;flex-direction: column;text-align: center;gap:var(--spacer4);}
+.logFrm input,.logFrm button{border-radius: var(--rd10);height: var(--fm-h-xl);}
+.logFrm input{border-color: rgb(var(--black),.5);}
+.logFrm .idSave{justify-content:flex-end;display:inline-flex;font-size: 85%;}
+.logFrm .toggle [type=checkbox]:checked ~ i::after,.logFrm .primary{background-color:#4151E6;}
+.logFrm .primary{justify-content: center;font-weight: 600;font-size: 105%;margin-top: var(--spacer10);}
+.logFrm .find{font-size: 85%;}
+.logFrm .find::after{content:'\EA6E'; font-family:var(--ifont1);}
+.logFrm .flogo{display:flex;flex-direction: column;align-items: center;gap:var(--spacer2);margin-top: var(--spacer5);}
+
+@media screen and (max-width: 1280px) {
+    body {font-size: var(--fz-body-s);}
+}

@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+#content > section{display: flex;gap: var(--spacer6);padding-top: var(--spacer6);flex-wrap:wrap;}
+#content > section > article{box-shadow: 0 0 1rem rgba(var(--black), .1);border-radius: var(--rd10);padding: var(--spacer5);background: rgb(var(--white));display: flex;flex-direction: column;gap:var(--spacer7);}
+
+.intWrap{display: flex;align-items: center;gap:var(--spacer3);}
+.titWrap{display: flex;align-items: center;gap: var(--spacer6);}
+.titWrap .intWrap input{flex:1 1 auto;}
+
+.flexColumn{flex:1 1 auto;width:auto;overflow: hidden;flex-direction: column;}
+.floatWrap .btnWrap{margin-left: auto;display: flex;}
+.floatWrap .btnWrap button::after{color: rgb(var(--white));}
+
+.mapSec{flex-basis:40%;}
+.dataSec{flex-basis:calc(60% - var(--spacer6));}
+.dataSrh{flex-basis: 45%;}
+.titWrap select{flex: 1 1 auto;min-width: 33%;}
+
+/* chart 높이 지정 */
+.chartTbl{max-height: 26.2rem;overflow-y:auto;}
+.dataTbl {max-height: 36.5rem;overflow-y: auto;}
+
+.mapWrap {display: flex;flex-direction: column;gap: var(--spacer3);justify-content: space-between;}
+.mapWrap .mapInner{display: flex;align-items: center;justify-content: center;flex-direction: column;}
+.mapWrap .map{position: relative;width:100%;max-width:100%;}
+.mapWrap .map.jejuMap{ padding-bottom:56.25%;}
+/* .mapWrap .map svg{width: 100%;height: 100%;min-height: 54rem;} width="385" height="542" 원래 svg 사이즈*/
+.mapWrap .mapInner > .btnWrap, .dataSrh > .btnWrap{width: 100%;justify-content: flex-end;gap: var(--spacer2);}
+
+.mapWrap .mapMarker {position: absolute;top:0;left: 0;bottom:0;right:0}
+.mapWrap .mapMarker .mk{position: absolute;}
+.mapWrap .mapMarker .mk .markerLabel{position: absolute;top:-5rem;left:50%;transform: translateX(-50%);display: none;background-color: rgb(var(--white));color: initial;}
+.mapWrap .mapMarker .mk.active .markerLabel{display:block;}
+
+/* 임시마커값 */
+.mapWrap .mapMarker .mk1{top: 32rem; left:28rem;}
+.mapWrap .mapMarker .mk2{top: 12rem; left:10rem;}
+.mapWrap .mapMarker .mk3{top: 40rem; left:5rem;}
+.mapWrap .mapMarker .mk4{top: 30rem; left:10rem;}   
+
+.dataSrh > .btnWrap button.md{min-width: 9.5rem;justify-content: center;}
+.tblWrap .btnWrap{align-items: center;justify-content: center;}
+
+
+/* chart 기본 높이값 */
+[id*="chart"]{width: 100%;max-width: 100%;min-height: 50rem;}
+
+#chart1{min-height: 40rem;}
+/* #chart1 canvas{width: 100%;}
+#chart1 .cTooltip{background: rgba(var(--white),.3);box-shadow: 0 .4rem .6rem rgba(var(--black), .1);font-size: var(--fz-body-m);padding: var(--spacer3);border-radius: var(--fm-rd-m);display: flex;flex-direction: column;gap: var(--spacer1);} */
+
+.dataSrh .tblWrap {max-height: 66rem; overflow-x: auto;overflow-y: auto;}
+.dataSrh .tblWrap .tb{min-width: 55rem;}
+
+/* mapInfoList */
+.mapInfoList { flex-basis: calc(100% - 45% - var(--spacer6)); }
+.mapInfoList .mapWrap { flex-direction: row; height: 100%; flex-wrap: wrap; }
+.mapInfoList .listWrap { display: flex; flex-direction: column; gap: var(--spacer4); background: var(--primary); border-radius: var(--rd10); padding: var(--spacer7); flex-basis: 40%; }
+.mapInfoList .listWrap label { color: rgb(var(--white)); font-size: var(--fz-body-l); font-weight: 600; }
+.mapInfoList .intWrap { flex-direction: column !important; align-items: flex-start; }
+.mapInfoList .intWrap * { flex-basis: 100%; }
+.mapInfoList .intWrap input { min-height: var(--fm-h-l); }
+.mapInfoList .listWrap > .list > ul { display: flex; flex-direction: column; max-height: 45rem; overflow-y: auto; }
+.mapInfoList .listWrap > .list > ul > li { display: flex; align-items: center; justify-content: space-between; padding: var(--spacer4) 0; }
+.mapInfoList .listWrap > .list > ul > li:not(:first-child) { border-top: 0.1rem solid rgba(var(--white), 0.3); }
+.mapInfoList .listWrap > .list span { color: rgb(var(--white)); }
+.mapInfoList .listWrap > .btnWrap button { width: 100%; border: 0; background: rgba(var(--white), 0.3); color: rgba(var(--white)); }
+.mapInfoList .mapInner { flex: 1 1 auto; }
+.mapInfoList .listWrap > .list ul, .mapInfoList .listWrap > .list span, .mapInfoList .listWrap > .btnWrap button { color: rgb(var(--white)); }
+.mapInfoList .listWrap ul { max-height: 35rem; }
+
+/* mapSec2 */
+.mapSec2 { flex-basis: 65%; }
+[id*="mapChart"] {/*min-width: 80rem; min-height: 50rem;*/max-width:100%;max-height: 100%; position: absolute;left:0;right: 0;top:0;bottom: 0;}
+/* [id*="mapChart"] > canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; } */
+
+
+/* 임시 마커 값 */
+.mapSec2 .mapMarker .mk1{top: 32rem; left:28rem;}
+.mapSec2 .mapMarker .mk2{top: 24rem;left: 30rem;}
+.mapSec2 .mapMarker .mk3{top: 37rem;left: 24rem;}
+.mapSec2 .mapMarker .mk4{top: 30rem; left:10rem;}   
+
+/* makerSec */
+.markerSec{flex:1 1 auto;}
+.markerSec .markerList {max-height: 54rem;overflow-y: auto;}
+.markerSec .markerList ul li{background: var(--gray5);border-radius: var(--rd10);border:.1rem solid var(--gray10)}
+.markerSec .markerList ul li:not(:last-child){margin-bottom:var(--spacer4);}
+.markerSec .markerList ul li:hover, .markerSec .markerList ul li:active{border:.1rem solid var(--gray)}
+.markerSec .markerList ul li > a{display:flex;align-content: center; justify-content: space-between;padding:var(--spacer3) ;}
+.markerSec .markerList ul li > a > div{position: relative;display: flex;gap: var(--spacer4);align-items: center;}
+.markerSec .btnWrap{justify-content: flex-end;}
+.markerSec .btnWrap button{min-width: 10rem;}
+
+/* s0604 기상이력 */
+#s0604 .dataTbl{max-height: 86rem;}
+
+#s0604 .mapWrap .mapMarker .mk1{top: 46rem; left:32rem;}
+#s0604 .mapWrap .mapMarker .mk2{top: 48rem; left:22rem;}
+#s0604 .mapWrap .mapMarker .mk3{top: 42rem; left:15rem;}
+#s0604 .mapWrap .mapMarker .mk4{top: 36rem; left:18rem;}   
+
+#s0605 article{width: 100%;}

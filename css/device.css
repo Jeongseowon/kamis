@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* ==== 1650px 이하 일때 ==== */
+@media screen and (max-width: 1650px) {
+    .titWrap{flex-wrap: wrap;}
+    .mapInfoList, .dataSrh{flex-basis: 100%;width: 100%;}
+    .mapSec2{flex-basis: 100%;}
+}
+@media screen and (max-width: 1550px) {
+    #header{height:9rem;font-size: 95%;}
+    #container{min-height:calc(100vh - 9rem);padding-top: 9rem;}
+    aside{top:9rem}
+}
+@media screen and (max-width: 1450px) {
+    
+
+}
+@media screen and (max-width: 1281px) {
+    /* #content > section{flex-direction: column;} */
+    .flexColumn{width: 100%;}
+
+}
+
+/* ==== 1400px 이하 일때 ==== */
+@media screen and (max-width: 1280px) {
+    aside{width: 21rem;}
+    #content{max-width: calc(100% - 21rem - var(--spacer5));margin-left: 21rem;}
+    
+    /*aside{left:-3.4rem;margin-left:-22rem;}
+    #content{max-width:calc(100% - 3.4rem - calc(var(--spacer5)*2));}*/
+}
+@media screen and (max-width: 1200px) {
+    #content.main section{ flex-direction: column;}
+}
+@media screen and (max-width: 1024px) {
+    #gnb { display: none; }
+    .mapInfoList .listWrap{flex-basis: 100%;}
+
+}
+/* ==== 1000px 이하 일때 ==== */
+@media screen and (max-width: 1000px) {
+    
+}
+
+/* ==== 1000px 이하 tablet 일때 ==== */
+@media screen and (max-width: 768px) {
+   
+
+}
+@media screen and (max-width: 600px) {
+    
+
+}
+@media screen and (max-width: 500px) {
+    
+}
+/* ==== 450px 이하 일때 모바일 전용 ==== */
+@media screen and (max-width: 450px) {
+}
+/* ==== 350px 이하 일때 모바일 전용(viewport : 414px;) ==== */
+@media screen and (max-width: 414px) {
+}

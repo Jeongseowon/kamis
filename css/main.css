@@ -1,0 +1,62 @@
+@charset "UTF-8";
+#content.main{max-width:calc(100% - calc(var(--spacer5)*2));margin:var(--spacer5);padding-left: 0;}
+.title{display:none;}
+
+section{display:flex;gap:var(--spacer4);width:100%;margin-top: var(--spacer6);}
+section article{flex:1;display:flex;gap:var(--spacer4)}
+section article.column{flex-direction: column;}
+article fieldset{display:flex;flex-direction:column;gap:var(--spacer4);width:100%;margin: 0;min-width: 45%;}
+fieldset > *{display:flex;}
+fieldset h2{border-radius:var(--rd10);background: var(--primary); color:rgb(var(--white));font-size: 135%;font-weight:500;justify-content: space-between;padding:0 var(--spacer6);height:var(--fm-h-l);align-items: center;}
+fieldset h2>span{ font-weight:400;font-size:70%; opacity: .7;}
+section .box{box-shadow: 0 0 0.5rem rgba(var(--black),.2);border-radius:var(--rd10);padding:var(--spacer4); display: block;}
+
+.ct{display:inline-flex; align-items: center; border-radius: var(--rd10); width:7rem; height:3rem; justify-content: center; font-size: 105%; color:rgb(132, 143, 203);font-weight: 500;}
+.ct.s01{background: rgba(132, 143, 203,0.2);color:#848FCB}
+.ct.s02{background: rgba(54, 127, 255,0.1);color:#367FFF}
+.ct.s03{background: rgba(68, 99, 255,0.2);color:#4463FF}
+.ct.s04{background: rgba(0, 136, 108,0.2);color:#00886c}
+
+.box dl{display:flex;margin: var(--spacer4) 0 0 auto;}
+.box dl dd{flex:1;align-items: center;display:flex;justify-content: center; position: relative;}
+.box dl dd:not(:first-child)::before{content:''; position: absolute;left:0;width: 0.1rem; background: rgba(var(--black),.15);height:70%;top:50%;transform: translateY(-50%);}
+.box strong{align-items: center;display:inline-flex;gap: var(--spacer1);font-size: 115%;}
+.box strong>em{font-weight:400;font-size:80%;}
+.box .ic::before{content:'';background:#EAF4FF;width:3rem;height: 3rem;border-radius:var(--rdfull);display: inline-flex;margin-right: var(--spacer2); justify-content: center; align-items: center;color:#367FFF;font-size:80%;font-family: var(--ifont2);}
+.box .i01::before{content:'\f0e7';}
+.box .i02::before{content:'\f159';font-size:65%;}
+
+.box .stit{display:flex;align-items: flex-end; justify-content: space-between;margin-bottom:var(--spacer4);}
+
+.progress{display:flex;gap:var(--spacer2);flex-direction: column;align-items: flex-end;}
+.progress > p{display:flex;gap:var(--spacer1);border-radius:var(--rd10);background:rgba(0, 193, 153,0.16);width:25rem;max-width:100%;height: 1rem;}
+.progress span{border-radius:var(--rd10);background:rgba(0, 193, 153,1);width:5rem;height: 1rem; display: inline-flex;}
+
+.box.s02{background-color:#F7F8FB;padding:0;flex-direction: column;}
+.box.s02>div{box-shadow: none;border-radius: 0; padding: var(--spacer6);}
+.box.s02>div:not(:last-child){border-bottom: 0.1rem solid rgba(var(--black),.05)}
+
+.box.s02 h4{ color:var(--primary);font-weight:600;font-size: 125%; margin-bottom: var(--spacer1);}
+.box.s02 h4::before{ content:'\EA62';font-family: var(--ifont1); margin-right: var(--spacer2);}
+.box.s02 ul>li{ display: flex; justify-content: space-between; font-weight: 500;}
+
+.box.s03{background-color: #141B43;padding: var(--spacer6);flex-direction: column;color:rgba(var(--white),.7);}
+.box .price{text-align: right;color:rgba(var(--white),.5);margin-top: var(--spacer3);}
+.box .price span,.box .price strong{color:rgba(var(--white))}
+.box .price span{border-radius: var(--rd20);padding:var(--spacer1) var(--spacer4);margin-left: var(--spacer2);font-size: 115%;font-weight: 600;}
+.box .price p{ margin-bottom: var(--spacer2);}
+
+.box .price .plus{background-color:#2B8EFF;}
+.box .price .plus::before{content:'+';}
+.box .price .minus{background-color:#FF2B65}
+.box .price .minus::before{content:'-';}
+.box .price strong{font-size:200%;}
+
+
+.divider article:nth-of-type(1){min-width:70%;}
+.divider .dBlock{display: flex !important;gap:var(--spacer4);}
+.divider .dBlock > h3{background: #141B43; color:rgb(var(--white),0.8);font-weight:600;min-width: 10%; display: inline-flex;justify-content: center; align-items: center;flex-direction: column;border-radius: var(--rd10);}
+.divider .dBlock > h3 > span{ display: block; font-weight: 400;font-size:70%;}
+.divider .box{flex: 1;}
+
+[id*="chart"]{width: 100%;max-width: 100%;min-height:30rem;}

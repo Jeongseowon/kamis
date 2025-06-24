@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* layout */
+#container{display: flex; min-height: 100vh;}
+
+/* lnb */
+.lnb{width: 260px; background: #414761;}
+.lnb .lnb_tit{height: 60px; padding: 20px;background: #212537; text-align: center;}
+.lnb .lnb_tit img{ height:100%;}
+.lnb ul{border-top: 1px solid rgba(255,255,255,.08);}
+.lnb ul li a{display: block;position: relative; min-height: 50px; padding: 0 25px 0 45px;border-bottom: 1px solid rgba(255,255,255,.08); line-height: 50px; color: #fff; font-size: 17px; font-weight:500;opacity: 0.75;}
+.lnb ul li a:hover,
+.lnb ul li.on a{opacity: 1;font-weight: 600; background: #353a50;}
+.lnb ul li a::before{position: absolute; top: 50%; transform: translateY(-50%); left: 25px; width: 7px; height: 2px; background: #fff; content: '';}
+
+/* header */
+#header{width: calc(100% - 20px); height: 300px; padding-top: 80px; margin: 0 auto; border-radius: 5px 5px 20px 20px; text-align: center; color: #fff; background: #414761;}
+#header > span{display: block; margin-top: 20px; color: #b1b3bb; font-size: 20px; letter-spacing: -0.2px; font-weight: 500;}
+
+/* content */
+#content{width: calc(100% - 300px);margin: 0 auto;}
+article > h2{position: relative; margin: 40px 50px 15px 50px; padding-left: 25px; color: #414761; font-size: 33px; letter-spacing: -0.6px; font-weight: 700;}
+article > h2::before{position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 4px; height: 60%; background: #414761; content: '';}
+article > h2 > span{margin-left: 20px; font-size: 14px; font-weight: 400; vertical-align: middle; font-family: 'Malgun Gothic'; letter-spacing: -0.6px; color: #454545;}
+article .article_inner{padding: 25px 55px; border-top: 2px solid #414761;}
+article .article_inner > div:not(.js-popup){position: relative; margin-top: 30px;}
+article .article_inner > .sidebyside{position: relative; margin-top: 30px;}
+article .article_inner > .sidebyside{display: flex; justify-content: space-between; margin-top: 30px;}
+article .article_inner > .sidebyside > div,
+article .article_inner > .sidebyside > section{position: relative;width: 50%;}
+article .article_inner > .sidebyside > div:first-child,
+article .article_inner > .sidebyside > section:first-child{margin-right: 35px;}
+article .article_inner .component_tit{display: inline-block; position: absolute; top: -15px; left: -15px; padding: 0 25px; height: 30px; line-height: 30px; border-radius: 25px; text-align: center; color: #fff; font-size: 14px; font-weight: 500; letter-spacing: 0; background: #414761; z-index: 2;}
+article .article_inner .component_desc{padding: 20px; border-radius: 10px; background: #f3f6f9;}
+article .article_inner .component_desc p{font-weight: 500;color: #414761;}
+
+/* conponent table */
+.conponent_tbl{position: relative;z-index: 1;border-top: 2px solid #29323b;border-left: 1px solid #ddd;border-right: 1px solid #ddd;border-bottom: 1px solid #ddd;}
+.conponent_tbl tbody th{padding: 10px 20px; color: #414761;font-size: 18px;}
+.conponent_tbl tbody th[rowspan]{border-right: 1px solid #ddd;}
+.conponent_tbl tbody td{height: 45px; padding: 8px 10px; border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;word-wrap: break-word; font-size: 15px; word-break: keep-all; letter-spacing: -0.2px;color: #414761;}
+.conponent_tbl td:not(:last-child){border-right: 1px solid #ddd;}
+.conponent_tbl td:first-child{font-weight: 500; opacity: 0.75;}
+.conponent_tbl td:last-child{font-weight: 600;}
+
+/* code */
+.ui_code pre[class*=language-] {margin: 0;}
+.ui_code pre[class*=language-] {border-radius: 0;}
+.ui_code {background: #272822;}
+.ui_code > ul {border-bottom: 1px solid #454545;}
+.ui_code > ul::after {content: '';display: block;clear: both;}
+.ui_code > ul li {float: left;min-width: 70px;padding: 15px 15px 0 15px;border-right: 1px solid #454545;font-size: 14px;line-height: 30px;color: #fff;text-align: center;text-transform: uppercase;cursor: pointer;}
+.ui_code > ul li:hover {background: rgba(255, 255, 255, 0.05);}
+.ui_code > ul li.on {background: rgba(255, 255, 255, 0.1);}
+.ui_code .li_linenum {padding: 1em;font-family: Consolas;}
+.ui_code .li_linenum li {position: relative;counter-increment: linenumber;line-height: 1.8;color: #fff;}
+.ui_code .li_linenum li::before {content: counter(linenumber);display: inline-block;width: 2em;padding-right: .8em;margin-right: .8em;border-right: 1px solid #999;font-size: 16px;color: #999;letter-spacing: -1px;text-align: right;}
+.ui_code .li_linenum li a::before {content: '\e904';position: relative;bottom: -2px;margin-right: 10px;font-family: 'xeicon';line-height: 1;}
+.ui_code .li_linenum li a:hover {color: #999;}
