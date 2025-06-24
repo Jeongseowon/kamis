@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component guide</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- container -->
+        <main id="container">
+            <div class="includeJs" data-include-html="menu.html"></div>
+            <div id="content">
+                <section>
+
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;button class="btn">Button normal&lt;/button> 
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>가장 기본이 되는 일반적인 상황에 사용</p>
+                        </div>
+                        
+                        <button class="btn">Button default</button>
+                    </article>
+
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;button class="btn xs">Button xsmall&lt;/button>
+&lt;button class="btn sm">Button small&lt;/button>
+&lt;button class="btn md">Button middle&lt;/button>
+&lt;button class="btn lg">Button large&lt;/button>   
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>버튼 크기 xs ~ xl까지 다양</p>
+                        </div>
+                        
+                        <button class="btn xs">Button xsmall</button>
+                        <button class="btn sm">Button small</button>
+                        <button class="btn md">Button middle</button>
+                        <button class="btn lg">Button large</button>
+                        <button class="btn xl">Button xlarge</button>
+                    </article>
+
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;button class="btn">Button default&lt;/button>
+&lt;button class="btn line">Button solid&lt;/button>
+&lt;button class="btn primary">Button primary&lt;/button>
+&lt;button class="btn secondary">Button secondary&lt;/button>
+&lt;button class="btn point">Button point</button>   
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>Button Default를 제외하고는 가급적 한페이지에 중복하지 않고, 한번만 사용</p>
+                        </div>
+
+ 
+                        <button class="btn">Button default</button>
+                        <button class="btn line">Button solid</button>
+                        <button class="btn primary">Button primary</button>
+                        <button class="btn secondary">Button secondary</button>
+                        <button class="btn point">Button point</button>
+                        <button class="btn blue">Button blue</button>
+                    </article>
+
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;button class="btn block">Button block&lt;/button> 
+    &lt;button class="btn xl block">Button block&lt;/button>
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>column의 너비에 꽉 채운 버튼 레이블에 따라 결정</p>
+                        </div>
+                        
+                        <button class="btn block">Button block</button><br>
+                        <button class="btn xl block">Button block</button>
+                    </article>
+
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;   
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>비슷한 액션을 하는 버튼은 모아서 group으로 만들어 사용</p>
+                        </div>
+                        
+                        <div class="intWrap" role="group">
+                            <button type="button" class="btn">Button 1</button>                            
+                            <button type="button" class="btn">Button 2</button>                            
+                            <button type="button" class="btn">Button 3</button>                          
+                            <button type="button" class="btn">Button 4</button>                          
+                            <button type="button" class="btn">Button 5</button>
+                        </div>
+                    </article>
+                    
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;div class="accordion">
+    &lt;div class="accordItem">
+        &lt;button type="button" class="accordBtn" aria-controls="collapse01">아코디언타이틀1&lt;/button>
+        &lt;fieldset id="collapse01" class="accordPanel">
+            &lt;div class="accordConts">
+                아코디언을 서로 관련 있는 콘텐츠 섹션의 정보를 전달하기 위한 목적으로 사용하는 경우에는 아이콘을 헤더의 끝에 배치하는 것이 바람직하다. 헤더 목록에서 텍스트가 같은 위치에서 시작될 수 있어 사용자의 안구 운동 피로도를 줄일 수 있다. 만약 콘텐츠 섹션 목록이 트리 구조로 구성되어 있다면 이러한 정보를 전달하기 위해서 아이콘을 헤더의 시작 부분에 배치할 수 있다.
+            &lt;/div>
+        &lt;/fieldset>
+    &lt;/div>
+    &lt;div class="accordItem">
+        &lt;button type="button" class="accordBtn" aria-controls="collapse02">아코디언타이틀2&lt;/button>
+        &lt;fieldset id="collapse02" class="accordPanel">
+            &lt;div class="accordConts">
+                아코디언을 서로 관련 있는 콘텐츠 섹션의 정보를 전달하기 위한 목적으로 사용하는 경우에는 아이콘을 헤더의 끝에 배치하는 것이 바람직하다. 헤더 목록에서 텍스트가 같은 위치에서 시작될 수 있어 사용자의 안구 운동 피로도를 줄일 수 있다. 만약 콘텐츠 섹션 목록이 트리 구조로 구성되어 있다면 이러한 정보를 전달하기 위해서 아이콘을 헤더의 시작 부분에 배치할 수 있다.
+            &lt;/div>
+        &lt;/fieldset>
+    &lt;/div>
+&lt;/div>   
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>아코디언(Accordion) 컴포넌트 콘텐츠가 숨겨진 형태로 하위 콘텐츠를 표시하기위해 섹션의 헤더 목록이 수직으로 쌓여 있는 형태로 표현</p>
+                        </div>
+                        
+                        <div class="accordion">
+                            <div class="accordItem">
+                                <button type="button" class="accordBtn" aria-controls="collapse01">아코디언타이틀1</button>
+                                <fieldset id="collapse01" class="accordPanel">
+                                    <div class="accordConts">
+                                        아코디언을 서로 관련 있는 콘텐츠 섹션의 정보를 전달하기 위한 목적으로 사용하는 경우에는 아이콘을 헤더의 끝에 배치하는 것이 바람직하다. 헤더 목록에서 텍스트가 같은 위치에서 시작될 수 있어 사용자의 안구 운동 피로도를 줄일 수 있다. 만약 콘텐츠 섹션 목록이 트리 구조로 구성되어 있다면 이러한 정보를 전달하기 위해서 아이콘을 헤더의 시작 부분에 배치할 수 있다.
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="accordItem">
+                                <button type="button" class="accordBtn" aria-controls="collapse02">아코디언타이틀2</button>
+                                <fieldset id="collapse02" class="accordPanel">
+                                    <div class="accordConts">
+                                        아코디언을 서로 관련 있는 콘텐츠 섹션의 정보를 전달하기 위한 목적으로 사용하는 경우에는 아이콘을 헤더의 끝에 배치하는 것이 바람직하다. 헤더 목록에서 텍스트가 같은 위치에서 시작될 수 있어 사용자의 안구 운동 피로도를 줄일 수 있다. 만약 콘텐츠 섹션 목록이 트리 구조로 구성되어 있다면 이러한 정보를 전달하기 위해서 아이콘을 헤더의 시작 부분에 배치할 수 있다.
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;   
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p></p>
+                        </div>
+                        
+
+                    </article> -->
+                    
+                </section>
+            </div>
+        </main>
+        <!--// container -->
+    </div>
+    
+    
+    <script type="text/javascript" src="../lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/basic.js"></script>
+    <script type="text/javascript" src="../js/sub.js"></script>
+    <script type="text/javascript" src="../js/chart.js"></script>
+    <script type="text/javascript" src="../lib/jquery/jquery-ui-1.12.1.custom.js"></script>
+    <script type="text/javascript" src="../lib/simplebar/simplebar.min.js"></script>
+    <script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../lib/aos/aos.js"></script>
+    <script type="text/javascript" src="../lib/highchart/highcharts.js"></script>
+    <script type="text/javascript" src="../lib/highchart/highcharts-more.js"></script>
+    <script type="text/javascript" src="../js/plugin.js"></script>
+
+    <script type="text/javascript" src="lib/prism/prism.js"></script>
+    <script type="text/javascript" src="js/basic.js"></script>
+    <script type="text/javascript" src="js/guide.js"></script>
+    
+    <script>
+        $(function () {
+            $('nav').find("ul > li").eq(4).addClass("on");
+        });
+    </script>
+</body>
+</html>

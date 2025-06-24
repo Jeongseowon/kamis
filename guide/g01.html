@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Component guide</title>
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="css/common.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- container -->
+            <main id="container">
+                <div class="includeJs" data-include-html="menu.html"></div>
+                <div id="content">
+                    <section>
+                        <article>
+                            <button class="code_close"><span></span></button>
+                            <div class="ui_code">
+                                <ul class="tmenu">
+                                    <li class="on">html</li>
+                                </ul>
+                                <div class="t_code">
+                                    <div class="tcont on">
+                                        <pre><code class="line-numbers language-html">&lt;div>
+    &lt;input type="text" placeholder="플레이스홀더">
+&lt;/div>   
+</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component_desc">
+                                <p>기본 Text input</p>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="플레이스홀더" />
+                            </div>
+                        </article>
+
+                        <article>
+                            <button class="code_close"><span></span></button>
+                            <div class="ui_code">
+                                <ul class="tmenu">
+                                    <li class="on">html</li>
+                                </ul>
+                                <div class="t_code">
+                                    <div class="tcont on">
+                                        <pre><code class="line-numbers language-html">&lt;div class="error">
+    &lt;input type="text" placeholder="플레이스홀더">
+    &lt;p class="hint">에러메시지&lt;/p>
+&lt;/div>
+</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component_desc">
+                                <p>기본 텍스트 인풋</p>
+                            </div>
+                            <div class="error">
+                                <input type="text" placeholder="플레이스홀더" />
+                                <p class="hint">에러메시지</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <button class="code_close"><span></span></button>
+                            <div class="ui_code">
+                                <ul class="tmenu">
+                                    <li class="on">html</li>
+                                </ul>
+                                <div class="t_code">
+                                    <div class="tcont on">
+                                        <pre><code class="line-numbers language-html">&lt;div>
+    &lt;input type="text" placeholder="플레이스홀더" disabled>
+&lt;/div>   
+</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component_desc">
+                                <p>disabled Text input</p>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="플레이스홀더" disabled />
+                            </div>
+                        </article>
+
+                        <article>
+                            <button class="code_close"><span></span></button>
+                            <div class="ui_code">
+                                <ul class="tmenu">
+                                    <li class="on">html</li>
+                                </ul>
+                                <div class="t_code">
+                                    <div class="tcont on">
+                                        <pre><code class="line-numbers language-html">&lt;div>
+    &lt;input type="text" placeholder="플레이스홀더" readonly>
+&lt;/div>   
+</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component_desc">
+                                <p>disabled Text input</p>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="플레이스홀더" readonly />
+                            </div>
+                        </article>
+
+                        <article>
+                            <button class="code_close"><span></span></button>
+                            <div class="ui_code">
+                                <ul class="tmenu">
+                                    <li class="on">html</li>
+                                </ul>
+                                <div class="t_code">
+                                    <div class="tcont on">
+                                        <pre><code class="line-numbers language-html">&lt;div class="intWrap">
+    &lt;input type="text" placeholder="플레이스 내용">
+    &lt;button type="button" class="btn">검색&lt;/button>
+&lt;/div>
+</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component_desc">
+                                <p>Text input + 버튼</p>
+                            </div>
+
+                            <div class="intWrap">
+                                <input type="text" placeholder="플레이스 내용" />
+                                <button type="button" class="btn">버튼</button>
+                            </div>
+                        </article>
+
+                        <article>
+                            <button class="code_close"><span></span></button>
+                            <div class="ui_code">
+                                <ul class="tmenu">
+                                    <li class="on">html</li>
+                                </ul>
+                                <div class="t_code">
+                                    <div class="tcont on">
+                                        <pre><code class="line-numbers language-html">
+                                            &lt;input type="date" value="" placeholder="yyyy-mm-dd--" />
+</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component_desc">
+                                <p>달력 (년/월/일/시/분)</p>
+                            </div>
+                            <div>
+                                <input type="datetime-local" value="" placeholder="YYYY-MM-DDTHH:MM" />
+                            </div>
+                        </article>
+                        <!-- 달력 -->
+
+                        <!-- <article>
+                            <button class="code_close"><span></span></button>
+                            <div class="ui_code">
+                                <ul class="tmenu">
+                                    <li class="on">html</li>
+                                </ul>
+                                <div class="t_code">
+                                    <div class="tcont on">
+                                        <pre><code class="line-numbers language-html"> &lt;input type="date" name="" value="yyyy-mm-dd" />
+</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component_desc">
+                                <p>달력 (년/월/일)</p>
+                            </div>
+                            <div>
+                                <input type="date" name="" value="yyyy-mm-dd" />
+                            </div>
+                        </article> -->
+                        <!-- 달력 -->
+
+                        <article>
+                            <button class="code_close"><span></span></button>
+                            <div class="ui_code">
+                                <ul class="tmenu">
+                                    <li class="on" id="code01_1">html</li>
+                                    <li id="code01_2">js</li>
+                                </ul>
+                                <div class="t_code">
+                                    <div class="tcont on" data-tab="code01_1">
+                                        <pre><code class="line-numbers language-html">&lt;div class="schWrap box">
+        &lt;div class="calendar_input">
+            &lt;input id="searchStartDate" name="searchStartDate" type="text" value="" placeholder="yyyy-mm-dd" class="hasDatepicker" maxlength="10">&lt;images class="ui-datepicker-trigger" src="images/icon/calendar.svg" alt="달력" title="달력">&lt;/images>
+        &lt;/div>
+        &lt;span>~&lt;/span>
+        &lt;div class="calendar_input">
+            &lt;input id="searchEndDate" name="searchEndDate" type="text" value="" placeholder="yyyy-mm-dd" class="hasDatepicker" maxlength="10">&lt;images class="ui-datepicker-trigger" src="images/icon/calendar.svg" alt="달력" title="달력">&lt;/images>
+        &lt;/div>
+    
+        &lt;div class="intWrap period">
+            &lt;button type="button" class="btn">당일&lt;/button>
+            &lt;button type="button" class="btn">일주일&lt;/button>
+            &lt;button type="button" class="btn">한달&lt;/button>
+        &lt;/div>
+    &lt;/div>
+    </code></pre>
+                                    </div>
+                                    <div class="tcont" data-tab="code01_2">
+                                        <pre><code class="line-numbers language-js">$(function(){       
+        fncDate("searchStartDate", "searchEndDate");                 
+    });
+    var fncDate = function () {
+        var nowUrl = $(location).attr('href'); // 현재 URL 가져오기
+        var setDate = arguments;
+        var getId;
+        var fmt = "yy-mm-dd";
+    
+        switch (setDate.length) {
+            case 1:
+                getId = "#" + setDate[0]; break;
+            case 2:
+                if (setDate[1] != '') { getId = "#" + setDate[0] + ", #" + setDate[1]; break; }
+                else { getId = "#" + setDate[0]; break; }
+            case 3:
+                if (setDate[1] != '') { getId = "#" + setDate[0] + ", #" + setDate[1]; fmt = setDate[2]; break; }
+                else { getId = "#" + setDate[0]; fmt = setDate[2]; break; }
+        }
+    
+        var gubun = "";
+        var arg = getId.split(",");
+        var dates = $(getId).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            showOn: "button",
+            buttonImage: "images/icon/calendar.svg",
+            buttonImageOnly: true,
+            dateFormat: fmt,
+            onSelect: function (selectedDate) {
+                var selDate = new Date(selectedDate);
+                var selYear = selDate.getFullYear();
+                var selMonth = ('0' + (selDate.getMonth() + 1)).slice(-2)
+                var option = this.id == setDate[0] ? "minDate" : "maxDate",
+                    instance = $(this).data("datepicker"),
+                    date = (fmt == 'yy-mm' ? new Date(instance.selectedYear, instance.selectedMonth, 1) : $.datepicker.parseDate($.datepicker._defaults.dateFormat, selectedDate, instance.settings))
+                
+                $(this).trigger("change");
+                
+                if(setDate[0].indexOf('schEtc') > -1 || setDate[0].indexOf('searchStartDate') > -1){
+                    gubun = $("#schEtc09").val();
+                }else{
+                    gubun = $(arg[0].slice(0,-1)+9).val(); // ex) 시작일자 ID가 certDescFrmSchEtc06 일 때 certDescFrmSchEtc09 로 변경
+                }
+                
+                if(nullCheck(gubun) || gubun == 6){ // gubun이 null이거나 기간선택일 때 => 시작일 이전 날짜, 종료일 이후 날짜 비활성화
+                    dates.not(this).datepicker("option", option, date);
+                }else{
+                    dates.datepicker("option", "minDate", null);
+                    dates.datepicker("option", "maxDate", null);
+                }
+                    
+                if(gubun == 1){ // 일
+                    $(arg[0]).val(selectedDate);
+                    $(arg[1]).val(selectedDate);
+                }else if(gubun == 2){ // 주
+                    var dayOfWeek = selDate.getDay();
+                    var stDate = new Date(selectedDate);
+                    var endDate = new Date(selectedDate);
+                    stDate.setDate(selDate.getDate() - dayOfWeek);
+                    endDate.setDate(selDate.getDate() + (6 - dayOfWeek));
+                    $(arg[0]).val(stDate.getFullYear() + '-' + ('0' + (stDate.getMonth()+1)).slice(-2) + '-' + ('0' + stDate.getDate()).slice(-2));
+                    $(arg[1]).val(endDate.getFullYear() + '-' + ('0' + (endDate.getMonth()+1)).slice(-2) + '-' + ('0' + endDate.getDate()).slice(-2));
+                }else if(gubun == 3){ // 월
+                    var monthDate = new Date(selYear,selMonth,0);
+                    var lastDay = monthDate.getDate();
+                    $(arg[0]).val(selYear + '-' + selMonth + '-' + '01');
+                    $(arg[1]).val(selYear + '-' + selMonth + '-' + lastDay);
+                }else if(gubun == 4){ // 분기
+                    var lastDayOfQuarter = getLastDayOfQuarter(selYear, selMonth);
+                    $(arg[0]).val(lastDayOfQuarter.year + '-' + lastDayOfQuarter.strtMonth + '-' + '01');
+                    $(arg[1]).val(lastDayOfQuarter.year + '-' + lastDayOfQuarter.endMonth + '-' + lastDayOfQuarter.day);
+                }else if(gubun == 5){ // 년
+                    $(arg[0]).val(selYear + '-' + '01' + '-' + '01');
+                    $(arg[1]).val(selYear + '-' + '12' + '-' + '31');
+                }
+            }
+        });
+    
+        if(nowUrl.indexOf('Form.do') < 0){ // Form.do 포함일 때만 실행 
+            fncInputDate(arg[0],arg[1]);
+        }
+    }
+    </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="component_desc">
+                                <p>[검색박스] calendar input(yyyy-mm-dd) + 기간검색 (일자별 조회)</p>
+                            </div>
+
+                            <div class="schWrap box">
+                                <div class="calendar_input">
+                                    <input id="searchStartDate" name="searchStartDate" type="text" value="" placeholder="yyyy-mm-dd" />
+                                </div>
+                                <span>~</span>
+                                <div class="calendar_input">
+                                    <input id="searchEndDate" name="searchEndDate" type="text" value="" placeholder="yyyy-mm-dd" />
+                                </div>
+
+                                <div class="intWrap btnGroup" role="group">
+                                    <button type="button" class="btn">당일</button>
+                                    <button type="button" class="btn">일주일</button>
+                                    <button type="button" class="btn">한달</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <button class="code_close"><span></span></button>
+                            <div class="ui_code">
+                                <ul class="tmenu">
+                                    <li class="on" id="code02_1">html</li>
+                                    <li id="code02_2">js</li>
+                                </ul>
+                                <div class="t_code">
+                                    <div class="tcont on" data-tab="code02_1">
+                                        <pre><code class="line-numbers language-html">&lt;div class="calendar_input">
+        &lt;input id="monthpicker" name="monthpicker" type="text" value="" placeholder="yyyy-mm" >
+    &lt;/div>
+    </code></pre>
+                                    </div>
+                                    <div class="tcont" data-tab="code02_2">
+                                        <pre><code class="line-numbers language-js">$(function(){   
+        fncMonth("monthpicker");    
+    });
+    var fncMonth = function () {
+        var setDate = arguments;
+        var getId;
+        var fmt = "yy-mm";
+        switch (setDate.length) {
+                case 1:
+                        getId = "#" + setDate[0]; break;
+                case 2:
+                        if (setDate[1] != '') { getId = "#" + setDate[0] + ", #" + setDate[1]; break; }
+                        else { getId = "#" + setDate[0]; break; }
+                case 3:
+                        if (setDate[1] != '') { getId = "#" + setDate[0] + ", #" + setDate[1]; fmt = setDate[2]; break; }
+                        else { getId = "#" + setDate[0]; fmt = setDate[2]; break; }
+        }
+    
+        $(getId).monthpicker({
+            monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                changeMonth: true,
+                changeYear: true,
+                showOn: "button",
+                //buttonImage: "images/icon/calendar.svg",
+                //buttonImageOnly: true,
+                dateFormat: fmt
+        });
+    </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="component_desc">
+                                <p>calendar input(yyyy-mm) 월별 조회</p>
+                            </div>
+
+                            <div class="calendar_input">
+                                <input id="monthpicker" name="monthpicker" type="text" value="" placeholder="yyyy-mm" />
+                            </div>
+                        </article>
+
+                        <article>
+                            <button class="code_close"><span></span></button>
+                            <div class="ui_code">
+                                <ul class="tmenu">
+                                    <li class="on" id="code03_1">html</li>
+                                    <li id="code03_2">js</li>
+                                </ul>
+                                <div class="t_code">
+                                    <div class="tcont on" data-tab="code03_1">
+                                        <pre><code class="line-numbers language-html">&lt;div class="intWrap">
+        &lt;div class="calendar_input time">
+            &lt;input id="searchStartTime" name="searchStartTime" type="text" value="" data-type="hhmmss">
+        &lt;/div>
+        &lt;span>~&lt;/span>
+        &lt;div class="calendar_input time">
+            &lt;input id="searchEndTime" name="searchEndTime" type="text" value="" data-type="hhmmss">
+        &lt;/div>
+    &lt;/div>    
+    </code></pre>
+                                    </div>
+
+                                    <div class="tcont" data-tab="code03_2">
+                                        <pre><code class="line-numbers language-js">$(function(){   
+        fncTimeDate("searchStartTime", "searchEndTime");
+    });
+    var fncTimeDate = function (id) {
+        var setDate = arguments;
+        var getId = '#' + id;
+        var dataType = $(getId).data('type');
+        var timeFormat;
+        switch (setDate.length) {
+                case 1:
+                        getId = "#" + setDate[0]; break;
+                case 2:
+                        if (setDate[1] != '') { getId = "#" + setDate[0] + ", #" + setDate[1]; break; }
+                        else { getId = "#" + setDate[0]; break; }
+                case 3:
+                        if (setDate[1] != '') { getId = "#" + setDate[0] + ", #" + setDate[1]; fmt = setDate[2]; break; }
+                        else { getId = "#" + setDate[0]; fmt = setDate[2]; break; }
+        }
+        switch (dataType) {
+                case 'hh':
+                        timeFormat = 'hh:00';
+                        $(getId).attr('placeholder', 'yyyy-mm-dd hh:mm');
+                        break;
+                case 'hhmm':
+                        timeFormat = 'hh:mm';
+                        $(getId).attr('placeholder', 'yyyy-mm-dd hh:mm');
+                        break;
+                case 'hhmmss':
+                        timeFormat = 'hh:mm:ss';
+                        $(getId).attr('placeholder', 'yyyy-mm-dd hh:mm:ss');
+                        break;
+                default:
+                        timeFormat = 'hh:mm:ss'; // 기본값
+                        $(getId).attr('placeholder', 'yyyy-mm-dd hh:mm:ss');
+        }
+        var fmt1 = "yy-mm-dd";
+    
+        var dates = $(getId).datetimepicker({
+                changeMonth: true,
+                changeYear: true,
+                showOn: "button",
+                buttonImage: "images/icon/calendar.svg",
+                buttonImageOnly: true,
+                onSelect: function (selectedDate) {
+                        var option = this.id == setDate[0] ? "minDate" : "maxDate",
+                                instance = $(this).data("datepicker"),
+                                date = (fmt1 == 'yy-mm' ? new Date(instance.selectedYear, instance.selectedMonth, 1) : $.datepicker.parseDate($.datepicker._defaults.dateFormat, selectedDate, instance.settings));
+                        dates.not(this).datepicker("option", option, date);
+                        $(this).trigger("change");
+                },
+                dateFormat: fmt1,
+                timeFormat: timeFormat,
+                controlType: 'select', // 시간 선택을 select로 설정
+                oneLine: true, // 한 줄에 날짜와 시간을 표시
+                timeOnlyTitle: 'Choose Time', // 시간 선택 창의 제목
+                timeText: '시간선택', // 시간 라벨
+                hourText: '시', // 시 라벨
+                minuteText: '분', // 분 라벨
+                secondText: '초', // 초 라벨
+                currentText: '현재시간', // 현재 시간으로 설정 버튼
+                closeText: '확인', // 닫기 버튼
+                showTimepicker: true,
+                
+        });
+    }
+    </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="component_desc">
+                                <p>calendar input(yyyy-mm-dd hh:mm:ss) 시간조회</p>
+                            </div>
+
+                            <div class="intWrap">
+                                <div class="calendar_input time">
+                                    <input id="searchStartTime" name="searchStartTime" type="text" value="" data-type="hhmmss" />
+                                </div>
+                                <span>~</span>
+                                <div class="calendar_input time">
+                                    <input id="searchEndTime" name="searchEndTime" type="text" value="" data-type="hhmmss" />
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <button class="code_close"><span></span></button>
+                            <div class="ui_code">
+                                <ul class="tmenu">
+                                    <li class="on" id="code03_1">html</li>
+                                    <li id="code03_2">js</li>
+                                </ul>
+                                <div class="t_code">
+                                    <div class="tcont on" data-tab="code03_1">
+                                        <pre><code class="line-numbers language-html">
+                                            &lt;div class="customSelect">
+                                                &lt;button class="selectButton">Select button&lt;/button>
+                                                &lt;ul class="selectOptions">
+                                                  &lt;li data-value="option1">Option 1&lt;/li>
+                                                  &lt;li data-value="option2">Option 2&lt;/li>
+                                                  &lt;li data-value="option3">Option 3&lt;/li>
+                                                  &lt;/ul>
+                                                  &lt;/div>
+    </code></pre>
+                                    </div>
+
+                                    <div class="tcont" data-tab="code03_2">
+                                        <pre><code class="line-numbers language-js">
+const selectButton = $(".selectButton");
+    const optionsList = $(".selectOptions");
+
+    selectButton.on("click", function () {
+        optionsList.toggleClass("show");
+    });
+
+    optionsList.on("click", "li", function () {
+        const selectedValue = $(this).data("value");
+        selectButton.text($(this).text());
+        optionsList.removeClass("show");
+        console.log("Selected Value:", selectedValue);
+    });
+
+    $(document).on("click", function (e) {
+        if (!$(e.target).closest(".customSelect").length) {
+            optionsList.removeClass("show");
+        }
+    });
+    </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="component_desc">
+                                <p>select custom</p>
+                            </div>
+
+                            <div class="customSelect">
+                                <button class="selectButton">Select button</button>
+                                <ul class="selectOptions">
+                                    <li data-value="option1">Option 1</li>
+                                    <li data-value="option2">Option 2</li>
+                                    <li data-value="option3">Option 3</li>
+                                </ul>
+                            </div>
+                        </article>
+                        <!-- custom select -->
+                    </section>
+                </div>
+            </main>
+            <!--// container -->
+        </div>
+
+        <script type="text/javascript" src="../lib/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript" src="../js/basic.js"></script>
+        <script type="text/javascript" src="../js/sub.js"></script>
+        <script type="text/javascript" src="../js/chart.js"></script>
+        <script type="text/javascript" src="../lib/jquery/jquery-ui-1.12.1.custom.js"></script>
+        <script type="text/javascript" src="../lib/simplebar/simplebar.min.js"></script>
+        <script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="../lib/aos/aos.js"></script>
+        <script type="text/javascript" src="../lib/highchart/highcharts.js"></script>
+        <script type="text/javascript" src="../lib/highchart/highcharts-more.js"></script>
+        <script type="text/javascript" src="../js/plugin.js"></script>
+
+        <script type="text/javascript" src="lib/prism/prism.js"></script>
+        <script type="text/javascript" src="js/basic.js"></script>
+        <script type="text/javascript" src="js/guide.js"></script>
+
+        <script>
+            $(function () {
+                $("nav").find("ul > li").eq(1).addClass("on");
+                fncDate("searchStartDate", "searchEndDate");
+                fncMonth("monthpicker");
+                fncTimeDate("searchStartTime", "searchEndTime");
+            });
+        </script>
+    </body>
+</html>

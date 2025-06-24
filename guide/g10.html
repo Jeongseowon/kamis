@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component guide</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- container -->
+        <main id="container">
+            <div class="includeJs" data-include-html="menu.html"></div>
+            <div id="content">
+                <section>
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html"><!-- &lt; -->
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                           기본 입력 폼 UI
+                        </div>
+                        
+                        <div>
+                            <h3 class="ctit point">
+                                <strong>공통사항</strong>
+                                <em><span class="req">*</span> 필수입력사항입니다.</em>
+                            </h3>
+                            <div class="infCon column">
+                                <article>
+                                    <h4 class="tit">
+                                        <strong>계약 담당자</strong>
+                                        <button type="button" class="btn">담당자 불러오기</button>
+                                    </h4>
+                                    <div class="inf">
+                                        <ul>
+                                            <li><span class="req">*</span> 담당자명</li>
+                                            <li><input type="text" placeholder="이름"></li>
+                                        </ul>
+                                        <ul>
+                                            <li><span class="req">*</span> 연락처</li>
+                                            <li>
+                                                <select name="phone0" id="" title="전화번호 앞자리 선택">
+                                                    <option value="">010</option>
+                                                    <option value="">011</option>
+                                                    <option value="">070</option>
+                                                </select>
+                                                <span class="gap">-</span>
+                                                <input type="text" title="전화번호 중간자리 입력" placeholder="1234" name="phone">
+                                                <span class="gap">-</span>
+                                                <input type="text" title="전화번호 끝자리 입력" placeholder="5678" name="phone2">
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li><span class="req">*</span> 이메일</li>
+                                            <li>
+                                                <div class="email">
+                                                    <input type="text" title="이메일 계정입력" name="email1">
+                                                    <span class="gap">@</span>
+                                                    <select title="이메일 도메인 선택" name="email2">
+                                                        <option value="" selected="selected">직접입력</option>
+                                                        <option value="">gmail.com</option>
+                                                        <option value="">daum.net</option>
+                                                        <option value="">naver.com</option>
+                                                    </select>
+                                                    <input type="text" title="이메일 도메인 직접입력" placeholder="직접입력" name="email3">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <!-- //article -->
+    
+                                <article>
+                                    <h4 class="tit">
+                                        <strong>정산 담당자</strong>
+                                        <span>
+                                            <input type="checkbox" name="chk_13" id="chk_13">
+                                            <label for="chk_13">계약 담당자와 동일</label>
+                                        </span>
+                                    </h4>
+                                    <div class="inf">
+                                        <ul>
+                                            <li><span class="req">*</span> 담당자명</li>
+                                            <li><input type="text" placeholder="이름"></li>
+                                        </ul>
+                                        <ul>
+                                            <li><span class="req">*</span> 연락처</li>
+                                            <li>
+                                                <select name="phone0" id="" title="전화번호 앞자리 선택">
+                                                    <option value="">010</option>
+                                                    <option value="">011</option>
+                                                    <option value="">070</option>
+                                                </select>
+                                                <span class="gap">-</span>
+                                                <input type="text" title="전화번호 중간자리 입력" placeholder="1234" name="phone">
+                                                <span class="gap">-</span>
+                                                <input type="text" title="전화번호 끝자리 입력" placeholder="5678" name="phone2">
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li><span class="req">*</span> 이메일</li>
+                                            <li>
+                                                <div class="email">
+                                                    <input type="text" title="이메일 계정입력" name="email1">
+                                                    <span class="gap">@</span>
+                                                    <select title="이메일 도메인 선택" name="email2">
+                                                        <option value="" selected="selected">직접입력</option>
+                                                        <option value="">gmail.com</option>
+                                                        <option value="">daum.net</option>
+                                                        <option value="">naver.com</option>
+                                                    </select>
+                                                    <input type="text" title="이메일 도메인 직접입력" placeholder="직접입력" name="email3">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <!-- //article -->
+    
+                                <article>
+                                    <h4 class="tit">
+                                        <strong>시스템 담당자</strong>
+                                        <span>
+                                            <input type="checkbox" name="chk_14" id="chk_14">
+                                            <label for="chk_14">계약 담당자와 동일</label>
+                                        </span>
+                                    </h4>
+                                    <div class="inf">
+                                        <ul>
+                                            <li><span class="req">*</span> 담당자명</li>
+                                            <li><input type="text" placeholder="이름"></li>
+                                        </ul>
+                                        <ul>
+                                            <li><span class="req">*</span> 연락처</li>
+                                            <li>
+                                                <select name="phone0" id="" title="전화번호 앞자리 선택">
+                                                    <option value="">010</option>
+                                                    <option value="">011</option>
+                                                    <option value="">070</option>
+                                                </select>
+                                                <span class="gap">-</span>
+                                                <input type="text" title="전화번호 중간자리 입력" placeholder="1234" name="phone">
+                                                <span class="gap">-</span>
+                                                <input type="text" title="전화번호 끝자리 입력" placeholder="5678" name="phone2">
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li><span class="req">*</span> 이메일</li>
+                                            <li>
+                                                <div class="email">
+                                                    <input type="text" title="이메일 계정입력" name="email1">
+                                                    <span class="gap">@</span>
+                                                    <select title="이메일 도메인 선택" name="email2">
+                                                        <option value="" selected="selected">직접입력</option>
+                                                        <option value="">gmail.com</option>
+                                                        <option value="">daum.net</option>
+                                                        <option value="">naver.com</option>
+                                                    </select>
+                                                    <input type="text" title="이메일 도메인 직접입력" placeholder="직접입력" name="email3">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <!-- //article -->
+                            </div>
+                            <!-- //infCon -->
+    
+                            <div class="infCon">
+                                <h4 class="tit">
+                                    <strong><span class="req">*</span>세금계산서 정보</strong>
+                                </h4>
+                                <div class="tax">
+                                    <input type="text" title="종번호" placeholder="종번호" name="tax0">
+                                    <input type="text" title="업태" placeholder="업태" name="tax1">
+                                    <input type="text" title="종목" placeholder="종목" name="tax2">
+                                </div>
+                            </div>
+                            <!-- //infCon -->
+    
+                            <div class="infCon">
+                                <h4 class="tit">
+                                    <strong><span class="req">*</span>요금청구서 수령방법</strong>
+                                </h4>
+                                <div class="intWrap check">
+                                    <div>
+                                        <input type="radio" name="rdo_1" id="rdo_1">
+                                        <label for="rdo_1">e-Mail</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="rdo_1" id="rdo_1">
+                                        <label for="rdo_1">SMS(카카오톡)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //infCon -->
+    
+                            <div class="infCon">
+                                <h4 class="tit">
+                                    <strong><span class="req">*</span>전기신사업 등록번호</strong>
+                                </h4>
+                                <div class="intWrap">
+                                    <input type="text" placeholder="번호를 입력하세요">
+                                    <button type="button" class="btn">중복 확인</button>
+                                </div>
+                            </div>
+                            <!-- //infCon -->
+    
+                            <div class="infCon">
+                                <h4 class="tit">
+                                    <strong><span class="req">*</span>전기신사업등록증</strong>
+                                </h4>
+                                <div class="filebox column">
+                                    <div class="intWrap">
+                                        <input class="upload_name" value="" placeholder="첨부파일" type="text" title="첨부파일">
+                                        <input type="file" id="file">
+                                        <label for="file" class="btn" tabindex="0">파일 찾기</label>
+                                    </div>
+                                    <div class="intWrap">
+                                        <span class="file">첨부파일.jpg <b>[105 byte]</b></span>
+                                        <button type="button" class="btn">중복 확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //infCon -->
+                            <div class="infCon">
+                                <h4 class="tit">
+                                    <strong>사업자 CI파일(선택)</strong>
+                                </h4>
+                                <div class="intWrap">
+                                    <div class="filebox">
+                                        <input class="upload_name" value="" placeholder="첨부파일" type="text" title="첨부파일">
+                                        <input type="file" id="file">
+                                        <label for="file" class="btn" tabindex="0">파일 찾기</label>
+                                    </div>
+                                    <p class="blue">* CI파일은 일러스트 파일을 ZIP파일로 압축하여 등록 바랍니다.</p>
+                                </div>
+                            </div>
+                            <!-- //infCon -->
+                        </div>
+
+                    </article>
+                    
+                    <!-- <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;   
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p></p>
+                        </div>
+                        
+
+                    </article> -->
+
+                    
+                </section>
+            </div>
+        </main>
+        <!--// container -->
+    </div>
+    
+    
+    <script type="text/javascript" src="../lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/sub.js"></script>
+    <script type="text/javascript" src="../js/basic.js"></script>
+    <script type="text/javascript" src="../js/chart.js"></script>
+    <script type="text/javascript" src="../lib/jquery/jquery-ui-1.12.1.custom.js"></script>
+    <script type="text/javascript" src="../lib/simplebar/simplebar.min.js"></script>
+    <script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../lib/aos/aos.js"></script>
+    <script type="text/javascript" src="../lib/highchart/highcharts.js"></script>
+    <script type="text/javascript" src="../lib/highchart/highcharts-more.js"></script>
+    <script type="text/javascript" src="../js/plugin.js"></script>
+
+    <script type="text/javascript" src="lib/prism/prism.js"></script>
+    <script type="text/javascript" src="js/basic.js"></script>
+    <script type="text/javascript" src="js/guide.js"></script>
+    
+    <script>
+        $(function () {
+            $('nav').find("ul > li").eq(10).addClass("on");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+@import 'basic.css';
+@import 'guide.css';
+@import '../css/compenent.css';
+
+/** scroll (mCustomScrollbar, simplebar) **/
+/* mCustomScrollbar */
+.mCustomScrollBox .mCSB_dragger_bar {height: 5px !important; background-color: #414761 !important;margin: 0 !important; opacity: 0.5;}
+.mCustomScrollBox .mCSB_draggerRail {height: 5px !important; background-color: #414761 !important;margin: 0 !important; opacity: 0.15;}
+
+/* simplebar */
+.simplebar-track.simplebar-vertical {width: 5px !important;background-color: #e3e4e7 !important;margin: 0 !important;}
+.simplebar-track.simplebar-vertical .simplebar-scrollbar {background-color: rgba(65, 71, 97, 0.5) !important;opacity: 0.5;margin: 0 !important;}
+.simplebar-scrollbar.simplebar-visible:before{border-radius: 0; top: 0; left: 0; bottom: 0; right: 0;}
+.simplebar-track.simplebar-horizontal {height: 4px !important;background-color: #e3e4e7 !important;margin: 0 !important;}
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar {background-color: rgba(65, 71, 97, 0.5) !important;opacity: 0.5; margin: 0 !important;}
+.simplebar-scrollbar.simplebar-visible:before{border-radius: 0; top: 0; left: 0; bottom: 0; right: 0;}
+
+
+
+
+/*** SMS ***/
+.sms_section .sms_area.lt{width: 100%;}
+/* tree */
+.treemenu_box .ztree{padding: 0;}
+.treemenu_box .ztree .switch{position: relative !important;}
+.treemenu_box .ztree li span.button[class*="_docu"]{background: none;}
+.treemenu_box .ztree li span.button.switch{ height: 22px;}
+.treemenu_box .ztree li span.button.chk{position: relative; top: 6px; left: 20px; width: 18px; height: 22px; background-position: 50% 50% !important; cursor: pointer;}
+/* checkbox */
+.treemenu_box .ztree li span.button.chk.checkbox_true,
+.treemenu_box .ztree li span.button.chk.checkbox_true_focus,
+.treemenu_box .ztree li span.button.chk.checkbox_true_full,
+.treemenu_box .ztree li span.button.chk.checkbox_true_full_focus,
+.treemenu_box .ztree li span.button.chk.checkbox_true_part,
+.treemenu_box .ztree li span.button.chk.checkbox_true_part_focus{ background-image: url(../images/content/tree_check_on.png);}
+.treemenu_box .ztree li span.button.chk.checkbox_false,
+.treemenu_box .ztree li span.button.chk.checkbox_false_focus,
+.treemenu_box .ztree li span.button.chk.checkbox_false_full,
+.treemenu_box .ztree li span.button.chk.checkbox_false_full_focus,
+.treemenu_box .ztree li span.button.chk.checkbox_false_part,
+.treemenu_box .ztree li span.button.chk.checkbox_false_part_focus{background-image: url(../images/content/tree_check_off.png);}
+/* tree nodes */
+.treemenu_box .ztree li a{min-height: 34px; height: auto; word-wrap: break-word; word-break: break-all; white-space: normal; text-decoration: none;}
+.treemenu_box .ztree li a.curSelectedNode{min-height: 36px; line-height: 36px;}
+.treemenu_box .ztree li a[class^="level"] > span{padding-left: 7px;}
+.treemenu_box .ztree .level0 > a{margin-left: -41px; padding-left: 55px;}
+.treemenu_box .ztree .level1 > a{margin-left: -54px; padding-left: 80px;}
+.treemenu_box .ztree .level2 > a{margin-left: -61px; padding-left: 105px;}
+.treemenu_box .ztree .level1.switch.button[class*="_docu"]{left: 37px;}
+.treemenu_box .ztree .level1 > span.button.chk{left: 35px;}
+.treemenu_box .ztree .level2.switch.button[class*="_docu"]{left: 55px;}
+.treemenu_box .ztree .level2 > span.button.chk{left: 52px;}
+.treemenu_box .ztree li span.button.ico_open, .treemenu_box .ztree li span.button.ico_close, .treemenu_box .ztree li span.button.ico_docu{display: none;}
+.treemenu_box .ztree li span.button.roots_open ~ a, .treemenu_box .ztree li span.button.center_open ~ a, .treemenu_box .ztree li span.button.bottom_open ~ a{color: #0984d4;}
+.treemenu_box .ztree li span.button.roots_open, .treemenu_box .ztree li span.button.root_open, .treemenu_box .ztree li span.button.center_open, .treemenu_box .ztree li span.button.bottom_open{background: url(../images/icon/i_tree_minus.png) no-repeat 50% 50%;}
+.treemenu_box .ztree li span.button.roots_close, .treemenu_box .ztree li span.button.root_close, .treemenu_box .ztree li span.button.center_close, .treemenu_box .ztree li span.button.bottom_close{background: url(../images/icon/i_tree_plus.png) no-repeat 50% 50%;}
+.treemenu_box .ztree li span.button.roots_docu::after{content: '';position: absolute;right: 8px;top: 50%;width: 8px;height: 2px;background: #9a9e9f;}
+.treemenu_box .ztree>li>span.button.center_docu::after{right: 8px;}
+.treemenu_box .ztree li ul.line{background: none;}
+
+/*** 특수 검색조건 ***/
+.slide_select {position: relative; z-index: 1; background: #fff;}
+.slide_select .slide_text{position: relative; height: 36px; padding: 0 35px 0 15px;border: 1px solid #ddd; line-height: 36px; text-overflow: ellipsis; white-space: nowrap; cursor: pointer; overflow: hidden;}
+.slide_select .slide_text::after{position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 20px; height: 5px; background:  url(../images/content/i_select.png) no-repeat; content: '';}
+.slide_select .slide_text.slide::after{right: 10px; transform: translateY(-50%) rotate(-180deg);}
+.slide_select .slide_text > span{display: inline-block; height: 21px; padding: 0 15px; margin-right: 10px; border: 1px solid #eee; border-radius: 20px; line-height: 21px; font-size: 14px; background: #f3f6f9;}
+.slide_select .slide_text > span:last-child{margin-right: 0;}
+.slide_select .treemenu_box{display: none; position: absolute; top: 36px; left: 0; z-index: 2;}
+
+/* option에 checkbox가 있는 select */
+.mutliSelect {position: relative; z-index: 3;}
+.mutliSelect .multi_text{display: block; position: relative; height: 36px; padding: 0 35px 0 15px; line-height: 36px;border: 1px solid #ddd; cursor: pointer; background: #fff;}
+.mutliSelect .multi_text::after{position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 20px; height: 5px; background:  url(../images/content/i_select.png) no-repeat; content: '';}
+.mutliSelect .multi_text span[class^="multi_group"]{position: relative; margin-right: 7px; padding-right: 2px;}
+.mutliSelect .multi_text span[class^="multi_group"]:last-child{margin-right: 0;}
+.mutliSelect .multi_text span[class^="multi_group"]::after{content: ','; position: relative;}
+.mutliSelect .multi_text span:last-child:after{display: none;}
+.mutliSelect .multi_text.slide::after{right: 10px; transform: translateY(-50%) rotate(-180deg);}
+.mutliSelect .multi_option{display: none; position: absolute; top: 35px; left: 0; width: 100%; padding: 15px; border: 1px solid #ddd; background: #fff;}
+
+
+
+/*** category ***/
+[class^="board_category"]{display: inline-block; min-width: 80px; padding: 0 10px; height: 28px; font-size: 15px; line-height: 28px; text-align: center; border: 1px solid; border-radius: 25px;}
+.board_category1{color: #414761; border-color: #414761;}
+.board_category2{color: #4683f3; border-color: #4683f3;}
+.board_category3{color: #499d8d; border-color: #499d8d;}
+.board_category4{color: #e95560; border-color: #e95560;}
+
+
+
+/*** state ***/
+.state{padding: 0 10px;  min-width: 80px;height: 28px; font-size: 15px; line-height: 28px; text-align: center; color: #fff; border-radius: 25px;}
+.state.basic{background: #414761;}
+.state.blue{background: #4683f3;}
+.state.green{background: #499d8d;}
+.state.red{background: #e95560;}
+.state.gray{background: #a7a8af;}
+
+/* list state */
+.state.sml{min-width: 16px; height: 16px; line-height: 16px; padding: 0 3px; font-size: 10px; border-radius: 3px;}

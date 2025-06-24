@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Component guide</title>
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/board.css" />
+        <link rel="stylesheet" href="css/common.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- container -->
+            <main id="container">
+                <div class="includeJs" data-include-html="menu.html"></div>
+                <div id="content">
+                    <section>
+                        <article>
+                            <button class="code_close"><span></span></button>
+                            <div class="ui_code">
+                                <ul class="tmenu">
+                                    <li class="on">html</li>
+                                </ul>
+                                <div class="t_code">
+                                    <div class="tcont on">
+                                        <pre><code class="line-numbers language-html">
+                                            &lt;div class="pagination">
+                                                &lt;a class="navi prev" href="#">PREV&lt;/a>
+                                                    &lt;div class="links">
+                                                        &lt;a href="#">1&lt;/a>
+                                                        &lt;span>&lt;/span>
+                                                        &lt;a href="#">6&lt;/a>
+                                                        &lt;a href="#">7&lt;/a>
+                                                        &lt;a class="active" href="#">8&lt;/a>
+                                                        &lt;a href="#">9&lt;/a>
+                                                        &lt;a href="#">10&lt;/a>
+                                                        &lt;a href="#">11&lt;/a>
+                                                        &lt;span>&lt;/span>
+                                                        &lt;a href="#">120&lt;/a>
+                                                    &lt;/div>
+                                                &lt;a class="navi next" href="#">NEXT&lt;/a>
+                                            &lt;/div>
+                                            
+</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component_desc">
+                                <p>기본 페이징</p>
+                            </div>
+
+                            <div class="pagination">
+                                <a class="navi prev" href="#">PREV</a>
+                                <div class="links">
+                                    <a href="#">1</a>
+                                    <span></span>
+                                    <a href="#">6</a>
+                                    <a href="#">7</a>
+                                    <a class="active" href="#">8</a>
+                                    <a href="#">9</a>
+                                    <a href="#">10</a>
+                                    <a href="#">11</a>
+                                    <span></span>
+                                    <a href="#">120</a>
+                                </div>
+                                <a class="navi next" href="#">NEXT</a>
+                            </div>
+                        </article>
+                        <!-- //기본페이징 -->
+                    </section>
+                </div>
+            </main>
+            <!--// container -->
+        </div>
+
+        <script type="text/javascript" src="../lib/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript" src="../js/sub.js"></script>
+        <script type="text/javascript" src="../js/basic.js"></script>
+        <script type="text/javascript" src="../js/chart.js"></script>
+        <script type="text/javascript" src="../lib/jquery/jquery-ui-1.12.1.custom.js"></script>
+        <script type="text/javascript" src="../lib/simplebar/simplebar.min.js"></script>
+        <script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="../lib/aos/aos.js"></script>
+        <script type="text/javascript" src="../lib/highchart/highcharts.js"></script>
+        <script type="text/javascript" src="../lib/highchart/highcharts-more.js"></script>
+        <script type="text/javascript" src="../js/plugin.js"></script>
+
+        <script type="text/javascript" src="lib/prism/prism.js"></script>
+        <script type="text/javascript" src="js/basic.js"></script>
+        <script type="text/javascript" src="js/guide.js"></script>
+
+        <script>
+            $(function () {
+                $("nav").find("ul > li").eq(7).addClass("on");
+            });
+        </script>
+    </body>
+</html>

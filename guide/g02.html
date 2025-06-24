@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component guide</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- container -->
+        <main id="container">
+            <div class="includeJs" data-include-html="menu.html"></div>
+            <div id="content">
+                <section>
+                    
+                    
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;div class="schWrap pos">
+    &lt;input type="search" placeholder="검색어를 입력해주세요">
+    &lt;button type="button" class="ico sch">검색&lt;/button>
+&lt;/div>
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>검색 input</p>
+                        </div>
+
+                        <div class="schWrap pos">
+                            <input type="search" placeholder="검색어를 입력해주세요">
+                            <button type="button" class="ico sch">검색</button>
+                        </div>
+
+                    </article>
+                    
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;div class="schWrap">
+    &lt;select>
+        &lt;option>선택해주세요&lt;/option>
+    &lt;/select>
+    &lt;div class="pos">
+        &lt;input type="search" placeholder="검색어를 입력해주세요">
+        &lt;button type="button" class="ico sch">검색&lt;/button>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>Select + 검색 input</p>
+                        </div>
+
+                        <div class="schWrap">
+                            <select>
+                                <option>선택해주세요</option>
+                            </select>
+                            <div class="pos">
+                                <input type="search" placeholder="검색어를 입력해주세요">
+                                <button type="button" class="ico sch">검색</button>
+                            </div>
+                        </div>
+
+                    </article>                    
+                    
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;div class="schWrap box">
+    &lt;select>
+        &lt;option>선택해주세요&lt;/option>
+    &lt;/select>
+    &lt;input type="text" placeholder="플레이스 내용">
+    &lt;button type="button" class="btn">검색&lt;/button>
+&lt;/div>
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>[검색박스] Select + Text input + 버튼</p>
+                        </div>
+
+                        <div class="schWrap box">
+                            <select>
+                                <option>선택해주세요</option>
+                            </select>
+                            <input type="text" placeholder="플레이스 내용">
+                            <button type="submit" class="btn srch">검색</button>
+                        </div>
+
+                    </article>
+
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">
+    
+    &lt;div class="schWrap box">
+        &lt;input type="text" placeholder="수집기간 입력">
+        &lt;input type="text" placeholder="수집원 이름 입력">
+        &lt;input type="text" placeholder="수집원 코드 입력">
+        &lt;input type="text" placeholder="저장컬렉션 입력">
+        &lt;input type="text" placeholder="수집주기 입력">
+        &lt;button type="submit" class="btn srch">검색&lt;/button>
+    &lt;/div>
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>[검색박스]Text input + 검색</p>
+                        </div>
+
+                        <div class="schWrap box">
+                            <input type="text" placeholder="수집기간 입력">
+                            <input type="text" placeholder="수집원 이름 입력">
+                            <input type="text" placeholder="수집원 코드 입력">
+                            <input type="text" placeholder="저장컬렉션 입력">
+                            <input type="text" placeholder="수집주기 입력">
+                            <button type="submit" class="btn srch">검색</button>
+                        </div>
+
+                    </article>
+ 
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu">
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+                                    <pre><code class="line-numbers language-html">
+                                        
+                        &lt;div class="schWrap box">
+                            &lt;div class="intWrap">
+                                &lt;label for="">시작일자&lt;/label>
+                                &lt;input type="date" value="" placeholder="yyyy-mm-dd" />
+                                &lt;span>~&lt;/span>
+                                &lt;label for="">종료일자&lt;/label>
+                                &lt;input type="date" value="" placeholder="yyyy-mm-dd" />
+                            &lt;/div>
+
+                            &lt;div class="intWrap check">
+                                &lt;div>
+                                    &lt;input type="checkbox" name="schk_1" id="schk_1" />
+                                    &lt;label for="schk_1">단지별조회&lt;/label>
+                                &lt;/div>
+                                &lt;div>
+                                    &lt;input type="checkbox" name="schk_1" id="schk_1" />
+                                    &lt;label for="schk_1">설비별조회&lt;/label>
+                                &lt;/div>
+                            &lt;/div>
+
+                            &lt;button type="submit" class="btn srch">검색&lt;/button>
+                        &lt;/div>
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>[검색박스] calendar input(yyyy-mm-dd) + 기간검색 (일자별 조회)</p>
+                        </div>
+
+                        <div class="schWrap box">
+                            <div class="intWrap">
+                                <label for="">시작일자</label>
+                                <input type="date" value="" placeholder="yyyy-mm-dd" />
+                                <span>~</span>
+                                <label for="">종료일자</label>
+                                <input type="date" value="" placeholder="yyyy-mm-dd" />
+                            </div>
+
+                            <div class="intWrap check">
+                                <div>
+                                    <input type="checkbox" name="schk_1" id="schk_1" />
+                                    <label for="schk_1">단지별조회</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="schk_1" id="schk_1" />
+                                    <label for="schk_1">설비별조회</label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn srch">검색</button>
+                        </div>
+                    </article>
+                    <!-- //검색박스 -->
+
+                    
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">
+    
+    &lt;div class="schWrap box">
+        &lt;div class="intWrap">
+            &lt;label for="">시작일자&lt;/label>
+            &lt;input type="date" value="" placeholder="yyyy-mm-dd" />
+            &lt;span>~&lt;/span>
+            &lt;label for="">종료일자&lt;label>
+            &lt;input type="date" value="" placeholder="yyyy-mm-dd" />
+        &lt;/div>
+
+        &lt;input type="text" placeholder="위도 입력">
+        &lt;input type="text" placeholder="경도 입력">
+        
+        &lt;&lt;div class="btnWrap">
+            &lt;button type="button" class="btn reset">초기화&lt;/button>
+            &lt;button type="submit" class="btn srch">검색&lt;/button>
+        &lt;/div>
+    &lt;/div>
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>[검색박스] 초기화 버전 - 기간(일자별 조회) + Text input + 검색</p>
+                        </div>
+
+                        <div class="schWrap box">
+                            <div class="intWrap">
+                                <label for="">시작일자</label>
+                                <input type="date" value="" placeholder="yyyy-mm-dd" />
+                                <span>~</span>
+                                <label for="">종료일자</label>
+                                <input type="date" value="" placeholder="yyyy-mm-dd" />
+                            </div>
+
+                            <input type="text" placeholder="위도 입력">
+                            <input type="text" placeholder="경도 입력">
+                            
+                            <div class="btnWrap">
+                                <button type="button" class="btn reset">초기화</button>
+                                <button type="submit" class="btn srch">검색</button>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </section>
+            </div>
+        </main>
+        <!--// container -->
+    </div>
+    
+    
+    <script type="text/javascript" src="../lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/basic.js"></script>
+    <script type="text/javascript" src="../js/sub.js"></script>
+    <script type="text/javascript" src="../js/chart.js"></script>
+    <script type="text/javascript" src="../lib/jquery/jquery-ui-1.12.1.custom.js"></script>
+    <script type="text/javascript" src="../lib/simplebar/simplebar.min.js"></script>
+    <script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../lib/aos/aos.js"></script>
+    <script type="text/javascript" src="../lib/highchart/highcharts.js"></script>
+    <script type="text/javascript" src="../lib/highchart/highcharts-more.js"></script>
+    <script type="text/javascript" src="../js/plugin.js"></script>
+
+    <script type="text/javascript" src="lib/prism/prism.js"></script> 
+    <script type="text/javascript" src="js/basic.js"></script>
+    <script type="text/javascript" src="js/guide.js"></script>
+    
+    <script>
+        $(function () {
+            $('nav').find("ul > li").eq(2).addClass("on");
+        });
+    </script>
+</body>
+</html>

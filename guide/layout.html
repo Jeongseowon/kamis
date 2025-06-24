@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component guide</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/guide.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- container -->
+        <main id="container">
+            <aside class="lnb" data-simplebar>
+                <div class="lnb_tit">
+                    <a href=""><img src="../images/common/logo.svg" alt="로고">
+                </div>
+                <ul>
+                    <li class="on"><a href="content_top.html">컨텐츠 상단</a></li>
+                    <li><a href="title.html">타이틀</a></li>
+                    <li><a href="search_basic.html">검색 (기본)</a></li>
+                    <li><a href="search1.html">검색 type1</a></li>
+                    <li><a href="search2.html">검색 type2</a></li>
+                    <li><a href="search3.html">검색 type3(modal형)</a></li>
+                    <li><a href="tab.html">탭</a></li>
+                    <li><a href="table_basic.html">테이블 (기본)</a></li>
+                    <li><a href="table1.html">테이블 type1</a></li>
+                    <li><a href="table2.html">테이블 type2</a></li>
+                    <li><a href="table3.html">테이블 type3</a></li>
+                    <li><a href="table4.html">테이블 type4</a></li>
+                    <li><a href="table5.html">테이블 board</a></li>
+                    <li><a href="write.html">테이블 write/view</a></li>
+                    <li><a href="paging.html">페이징</a></li>
+                    <li><a href="button.html">버튼</a></li>
+                    <li><a href="modal.html">modal</a></li>
+                    <li><a href="tree.html">tree</a></li>
+                </ul>
+            </aside>
+            <div id="content">
+                <article>
+                    <h2>타이틀 영역</h2>
+                    <div class="article_inner">
+                        <div class="sidebyside">
+                            <div>
+                                <h6 class="component_tit">타이틀</h6>
+                                <pre><code class="line-numbers language-html">
+                                    </code>
+                                </pre>
+                                <div class="component_desc">
+                                    <p>- </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class="component_tit">타이틀</h6>
+                                <pre><code class="line-numbers language-html">
+                                    </code>
+                                </pre>
+                                <div class="component_desc">
+                                    <p>- </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <!--// container -->
+    </div>
+    
+    
+    <script type="text/javascript" src="../lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/sub.js"></script>
+    <script type="text/javascript" src="../js/chart.js"></script>
+    <script type="text/javascript" src="../lib/jquery/jquery-ui-1.12.1.custom.js"></script>
+    <script type="text/javascript" src="../lib/simplebar/simplebar.min.js"></script>
+    <script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../lib/aos/aos.js"></script>
+    <script type="text/javascript" src="../lib/highchart/highcharts.js"></script>
+    <script type="text/javascript" src="../lib/highchart/highcharts-more.js"></script>
+    <script type="text/javascript" src="../js/plugin.js"></script>
+    
+    <script>
+        $(function () {	
+            const $subVisual = document.querySelector('.subVisual');
+            const imgSrc = $subVisual.querySelector('img').getAttribute('src');
+            $subVisual.querySelector('img').setAttribute('src', imgSrc.replace('v0101', 'v0501'));
+
+            $(".title > strong").text("2차메뉴 타이틀");
+            $(".mtit > strong").text("3차메뉴 타이틀");
+           
+            $(".dep02>li").removeClass("on");
+            $('.dp01').find(".dep02 > li").eq(0).addClass("on");
+            $('.dp02').find(".dep02 > li").eq(2).addClass("on");
+            $('.dp03').find(".dep02 > li").eq(1).addClass("on");
+            $('.dp04').find(".dep02 > li").eq(0).addClass("on");
+           
+            $('.depBox').each(function() {
+                var $depBox = $(this);
+                var $parent = $depBox.parent();
+                var index = $parent.find('.dep02 > li').index($depBox.find('.dep02 > li.on'));
+                $parent.find('.selected').text($depBox.find('.dep02 > li').eq(index).text());
+            });
+
+            fncDate("searchStartDate", "searchEndDate");
+            fncTimeDate("searchStartTime", "searchEndTime");
+            fncMonth("monthpicker");
+        });
+    </script>
+</body>
+</html>

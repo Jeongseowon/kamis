@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component guide</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- container -->
+        <main id="container">
+            <div class="includeJs" data-include-html="menu.html"></div>
+            <div id="content">
+                <section>
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;div class="loading entire">
+    &lt;div class="wrap">
+        &lt;span class="spinner">&lt;/span>
+        &lt;strong>loading&lt;/strong>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>페이지 전체영역에 로딩이 필요할때 사용 로딩 종료시 "display:none" 처리</p>
+                        </div>
+                        <div>
+                            <div class="loading entire">
+                                <div class="wrap">
+                                    <span class="spinner"></span>
+                                    <strong>loading</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    
+                </section>
+            </div>
+        </main>
+        <!--// container -->
+    </div>
+    
+    
+    <script type="text/javascript" src="../lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/sub.js"></script>
+    <script type="text/javascript" src="../js/basic.js"></script>
+    <script type="text/javascript" src="../js/chart.js"></script>
+    <script type="text/javascript" src="../lib/jquery/jquery-ui-1.12.1.custom.js"></script>
+    <script type="text/javascript" src="../lib/simplebar/simplebar.min.js"></script>
+    <script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../lib/aos/aos.js"></script>
+    <script type="text/javascript" src="../lib/highchart/highcharts.js"></script>
+    <script type="text/javascript" src="../lib/highchart/highcharts-more.js"></script>
+    <script type="text/javascript" src="../js/plugin.js"></script>
+
+    <script type="text/javascript" src="lib/prism/prism.js"></script>
+    <script type="text/javascript" src="js/basic.js"></script>
+    <script type="text/javascript" src="js/guide.js"></script>
+    
+    <script>
+        $(function () {
+            $('nav').find("ul > li").eq(8).addClass("on");
+        });
+    </script>
+</body>
+</html>

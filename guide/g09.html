@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component guide</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- container -->
+        <main id="container">
+            <div class="includeJs" data-include-html="menu.html"></div>
+            <div id="content">
+                <section>
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;button type="button" class="btn mdOpen" data-target="modal_01">모달 호출&lt;/button>
+&lt;section id="modal_01" class="modal" role="dialog" aria-hidden="true">&lt;/section>
+    &lt;div class="mdDialog">
+        &lt;div class="mdContent">
+            &lt;h2 class="title">
+                모달 제목
+            &lt;/h2>
+            &lt;div class="conts">
+                &lt;h3 class="tit">내용 타이틀&lt;/h3>
+                &lt;div class="area">
+                    대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+                    대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+                    대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+                &lt;/div>
+        &lt;/div>
+                
+        &lt;div class="Tip">&lt;div class="box">
+            &lt;ul class="tlist dot">
+                &lt;li>&lt;strong>정산단가 :&lt;/strong> 충전사업자간에 로밍 충전요금을 사후 정산하는 단가입니다.&lt;/li>
+                &lt;li>&lt;strong>충전단가 :&lt;/strong> 로밍 충전 시 고객에게 청구하는 단가입니다.&lt;/li>
+            &lt;/ul>
+        &lt;/div>&lt;/div>
+        &lt;div class="btnWrap">
+            &lt;button type="button" class="btn mdClose">아니요&lt;/button>
+            &lt;button type="button" class="btn primary mdClose">예&lt;/button>
+        &lt;/div>
+            &lt;button type="button" class="ico close mdClose">닫기&lt;/button>
+        &lt;/div>
+    &lt;/div>
+    &lt;div class="mdBack">&lt;/div>
+&lt;/section>   
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>- button [data-target]과 모달창 [id]을 동일하게 삽입</p>
+                            <p>- button class="mdOpen" 선언시 모달창 오픈 class="mdClose" 선언시 닫힘</p>
+                            <p>- 모달창 class="title" 필요한 경우 삽입(삭제 가능)</p>
+                            <p>- 모달창 사이즈 조절 필요시 [class="mdDialog"] 영역에 <strong>sm,md,lg,xl</strong> 추가 삽입</p>
+                        </div>
+                        
+                        <button type="button" class="btn mdOpen" data-target="modal_01">모달 호출</button>
+                        <section id="modal_01" class="modal" role="dialog" aria-hidden="true">
+                            <div class="mdDialog">
+                                <div class="mdContent">
+                                    <!-- modal title -->
+                                    <h2 class="title">
+                                        모달 제목
+                                    </h2>
+                                    <!-- //modal title -->
+                                    <!-- modal contents -->
+                                    <div class="conts">
+                                        <h3 class="tit">내용 타이틀</h3>
+                                        <div class="area">
+                                            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+                                            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+                                            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+                                        </div>
+                                </div>
+                                        
+                                <div class="Tip"><div class="box">
+                                    <ul class="tlist dot">
+                                        <li><strong>정산단가 :</strong> 충전사업자간에 로밍 충전요금을 사후 정산하는 단가입니다.</li>
+                                        <li><strong>충전단가 :</strong> 로밍 충전 시 고객에게 청구하는 단가입니다.</li>
+                                    </ul>
+                                </div></div>
+                                <!-- //modal contents -->
+                                <!-- modal btn -->
+                                <div class="btnWrap">
+                                    <button type="button" class="btn mdClose">아니요</button>
+                                    <button type="button" class="btn primary mdClose">예</button>
+                                </div>
+                                    <!-- //modal btn -->
+                                    <!-- close button -->
+                                    <button type="button" class="ico close mdClose">닫기</button>
+                                    <!-- //close button -->
+                                </div>
+                            </div>
+                            <div class="mdBack"></div>
+                        </section>
+
+                    </article>
+                    
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;button type="button" class="btn mdOpen" data-target="modal_02">모달 호출&lt;/button>
+&lt;section id="modal_02" class="modal" role="dialog" aria-hidden="true">&lt;/section>
+    &lt;div class="mdDialog">
+        &lt;div class="mdContent">
+            &lt;div class="conts">
+                &lt;h3 class="tit">내용 타이틀&lt;/h3>
+                &lt;div class="area">
+                    대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+                    대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+                    대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+                &lt;/div>
+        &lt;/div>
+        &lt;div class="btnWrap">
+            &lt;button type="button" class="btn mdClose">아니요&lt;/button>
+            &lt;button type="button" class="btn primary mdClose">예&lt;/button>
+        &lt;/div>
+            &lt;button type="button" class="ico close mdClose">닫기&lt;/button>
+        &lt;/div>
+    &lt;/div>
+    &lt;div class="mdBack">&lt;/div>
+&lt;/section>   
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>- 모달창 사이즈 조절 필요시 [class="mdDialog"] 영역에 <strong>sm,md,lg,xl</strong> 추가 삽입</p>
+                        </div>
+                          
+                        <button type="button" class="btn mdOpen" data-target="modal_02">모달 호출</button>
+                        <section id="modal_02" class="modal" role="dialog" aria-hidden="true">
+                            <div class="mdDialog lg">
+                                <div class="mdContent"> 
+                                    <div class="conts">
+                                        <h3 class="tit">내용 타이틀</h3>
+                                        <div class="area"> 
+                                            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+                                            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+                                            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+                                        </div>
+                                </div>
+                                <!-- //modal contents -->
+                                <!-- modal btn -->
+                                <div class="btnWrap">
+                                    <button type="button" class="btn mdClose">아니요</button>
+                                    <button type="button" class="btn primary mdClose">예</button>
+                                </div>
+                                    <!-- //modal btn -->
+                                    <!-- close button -->
+                                    <button type="button" class="ico close mdClose">닫기</button>
+                                    <!-- //close button -->
+                                </div>
+                            </div>
+                            <div class="mdBack"></div>
+                        </section>
+
+                    </article>
+                    <!-- <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;   
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p></p>
+                        </div>
+                        
+
+                    </article> -->
+
+                    
+                </section>
+            </div>
+        </main>
+        <!--// container -->
+    </div>
+    
+    
+    <script type="text/javascript" src="../lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/basic.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/basic.js"></script>
+    <script type="text/javascript" src="../js/sub.js"></script>
+    <script type="text/javascript" src="../js/chart.js"></script>
+    <script type="text/javascript" src="../lib/jquery/jquery-ui-1.12.1.custom.js"></script>
+    <script type="text/javascript" src="../lib/simplebar/simplebar.min.js"></script>
+    <script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../lib/aos/aos.js"></script>
+    <script type="text/javascript" src="../lib/highchart/highcharts.js"></script>
+    <script type="text/javascript" src="../lib/highchart/highcharts-more.js"></script>
+    <script type="text/javascript" src="../js/plugin.js"></script>
+
+    <script type="text/javascript" src="lib/prism/prism.js"></script>
+    <script type="text/javascript" src="js/basic.js"></script>
+    <script type="text/javascript" src="js/guide.js"></script>
+    
+    <script>
+        $(function () {
+            $('nav').find("ul > li").eq(9).addClass("on");
+        });
+    </script>
+</body>
+</html>

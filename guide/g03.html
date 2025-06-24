@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component guide</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- container -->
+        <main id="container">
+            <div class="includeJs" data-include-html="menu.html"></div>
+            <div id="content">
+                <section>
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;div class="intWrap check">
+    &lt;div>
+        &lt;input type="radio" name="rdo_1" id="rdo_1">
+        &lt;label for="rdo_1">기본&lt;/label>
+    &lt;/div>
+    &lt;div>
+        &lt;input type="radio" name="rdo_1" id="rdo_2" checked="">
+        &lt;label for="rdo_2">선택됨&lt;/label>
+    &lt;/div>
+    &lt;div>
+        &lt;input type="radio" name="rdo_1" id="rdo_3" disabled="">
+        &lt;label for="rdo_3">비활성화&lt;/label>
+    &lt;/div>
+    &lt;div>
+        &lt;input type="radio" name="rdo_1a" id="rdo_4" disabled="" checked="">
+        &lt;label for="rdo_4">선택된 비활성화&lt;/label>
+    &lt;/div>
+&lt;/div>  
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>Group radio inline</p>
+                        </div>
+                        
+                        <div class="intWrap check">
+                            <div>
+                                <input type="radio" name="rdo_1" id="rdo_1">
+                                <label for="rdo_1">기본</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="rdo_1" id="rdo_2" checked="">
+                                <label for="rdo_2">선택됨</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="rdo_1" id="rdo_3" disabled="">
+                                <label for="rdo_3">비활성화</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="rdo_1a" id="rdo_4" disabled="" checked="">
+                                <label for="rdo_4">선택된 비활성화</label>
+                            </div>
+                        </div>
+
+                    </article>
+                    
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;div class="input check">
+    &lt;div>
+        &lt;input type="radio" name="rdo1_1" id="rdo1_1">
+        &lt;label for="rdo1_1">기본&lt;/label>
+    &lt;/div>
+    &lt;div>
+        &lt;input type="radio" name="rdo1_2" id="rdo1_2" checked="">
+        &lt;label for="rdo1_2">선택됨&lt;/label>
+    &lt;/div>
+    &lt;div>
+        &lt;input type="radio" name="rdo1_3" id="rdo1_3" disabled="">
+        &lt;label for="rdo1_3">비활성화&lt;/label>
+    &lt;/div>
+    &lt;div>
+        &lt;input type="radio" name="rdo1_4" id="rdo1_4" disabled="" checked="">
+        &lt;label for="rdo1_4">선택된 비활성화&lt;/label>
+    &lt;/div>
+&lt;/div>  
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>Group radio block</p>
+                        </div>
+                        
+                        <div class="input check">
+                            <div>
+                                <input type="radio" name="rdo1_1" id="rdo1_1">
+                                <label for="rdo1_1">기본</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="rdo1_2" id="rdo1_2" checked="">
+                                <label for="rdo1_2">선택됨</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="rdo1_3" id="rdo1_3" disabled="">
+                                <label for="rdo1_3">비활성화</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="rdo1_4" id="rdo1_4" disabled="" checked="">
+                                <label for="rdo1_4">선택된 비활성화</label>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;div class="intWrap check">
+    &lt;div>
+        &lt;input type="checkbox" name="chk_1" id="chk_1">
+        &lt;label for="chk_1">기본&lt;/label>
+    &lt;/div>
+    &lt;div>
+        &lt;input type="checkbox" name="chk_2" id="chk_2" checked="">
+        &lt;label for="chk_2">선택됨&lt;/label>
+    &lt;/div>
+    &lt;div>
+        &lt;input type="checkbox" name="chk_3" id="chk_3" disabled="">
+        &lt;label for="chk_3">비활성화&lt;/label>
+    &lt;/div>
+    &lt;div>
+        &lt;input type="checkbox" name="chk_4" id="chk_4" disabled="" checked="">
+        &lt;label for="chk_4">선택된 비활성화&lt;/label>
+    &lt;/div>
+&lt;/div>  
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>Group checkbox inline</p>
+                        </div>
+                        
+                        <div class="intWrap check">
+                            <div>
+                                <input type="checkbox" name="chk_1" id="chk_1">
+                                <label for="chk_1">기본</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="chk_2" id="chk_2" checked="">
+                                <label for="chk_2">선택됨</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="chk_3" id="chk_3" disabled="">
+                                <label for="chk_3">비활성화</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="chk_4" id="chk_4" disabled="" checked="">
+                                <label for="chk_4">선택된 비활성화</label>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;div class="input check">
+    &lt;div>
+        &lt;input type="checkbox" name="2chk_1" id="2chk_1">
+        &lt;label for="2chk_1">기본&lt;/label>
+    &lt;/div>
+    &lt;div>
+        &lt;input type="checkbox" name="2chk_2" id="2chk_2" checked="">
+        &lt;label for="2chk_2">선택됨&lt;/label>
+    &lt;/div>
+    &lt;div>
+        &lt;input type="checkbox" name="2chk_3" id="2chk_3" disabled="">
+        &lt;label for="2chk_3">비활성화&lt;/label>
+    &lt;/div>
+    &lt;div>
+        &lt;input type="checkbox" name="2chk_4" id="2chk_4" disabled="" checked="">
+        &lt;label for="2chk_4">선택된 비활성화&lt;/label>
+    &lt;/div>
+&lt;/div>   
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>Group checkbox block</p>
+                        </div>
+                        
+                        <div class="input check">
+                            <div>
+                                <input type="checkbox" name="2chk_1" id="2chk_1">
+                                <label for="2chk_1">기본</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="2chk_2" id="2chk_2" checked="">
+                                <label for="2chk_2">선택됨</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="2chk_3" id="2chk_3" disabled="">
+                                <label for="2chk_3">비활성화</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="2chk_4" id="2chk_4" disabled="" checked="">
+                                <label for="2chk_4">선택된 비활성화</label>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;div class="intWrap">
+    &lt;div class="toggle">
+        &lt;input type="checkbox" id="switch">
+        &lt;i>&lt;/i>
+        &lt;label for="switch">default&lt;/label>
+    &lt;/div>
+    &lt;div class="toggle">
+        &lt;input type="checkbox" id="switch_checked" checked="">
+        &lt;i>&lt;/i>
+        &lt;label for="switch_checked">checked&lt;/label>
+    &lt;/div>
+    &lt;div class="toggle">
+        &lt;input type="checkbox" id="switch_disabled" disabled="">
+        &lt;i>&lt;/i>
+        &lt;label for="switch_disabled">disabled&lt;/label>
+    &lt;/div>
+&lt;/div> 
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>toggle switch</p>
+                        </div>
+                        
+                        <div class="intWrap">
+                            <div class="toggle">
+                                <input type="checkbox" id="switch">
+                                <i></i>
+                                <label for="switch">default</label>
+                            </div>
+                            <div class="toggle">
+                                <input type="checkbox" id="switch_checked" checked="">
+                                <i></i>
+                                <label for="switch_checked">checked</label>
+                            </div>
+                            <div class="toggle">
+                                <input type="checkbox" id="switch_disabled" disabled="">
+                                <i></i>
+                                <label for="switch_disabled">disabled</label>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;div class="intWrap">
+    &lt;div class="chip">
+        &lt;input type="checkbox" id="chip">
+        &lt;label for="chip">default&lt;/label>
+    &lt;/div>
+    &lt;div class="chip">
+        &lt;input type="checkbox" id="chip_checked" checked="">
+        &lt;label for="chip_checked">checked&lt;/label>
+    &lt;/div>
+    &lt;div class="chip">
+        &lt;input type="checkbox" id="chip_disabled" disabled="">
+        &lt;label for="chip_disabled">disabled&lt;/label>
+    &lt;/div>
+&lt;/div>   
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>Group chip checkbox inline</p>
+                        </div>
+                        
+                        <div class="intWrap">
+                            <div class="chip">
+                                <input type="checkbox" id="chip">
+                                <label for="chip">default</label>
+                            </div>
+                            <div class="chip">
+                                <input type="checkbox" id="chip_checked" checked="">
+                                <label for="chip_checked">checked</label>
+                            </div>
+                            <div class="chip">
+                                <input type="checkbox" id="chip_disabled" disabled="">
+                                <label for="chip_disabled">disabled</label>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;div class="intWrap">
+    &lt;span class="hsTag">
+        #hashtag
+        &lt;button type="button" class="ico del">삭제&lt;/button>
+    &lt;/span>
+    &lt;span class="hsTag checked">
+        #hashtag : checked
+        &lt;button type="button" class="ico del">삭제&lt;/button>
+    &lt;/span>
+    &lt;span class="hsTag disabled">
+        #hashtag : disabled
+        &lt;button type="button" class="ico del">삭제&lt;/button>
+    &lt;/span>
+&lt;/div>  
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p>Group hashtag button inline</p>
+                        </div>
+                        
+                        <div class="intWrap">
+                            <span class="hsTag">
+                                #hashtag
+                                <button type="button" class="ico del">삭제</button>
+                            </span>
+                            <span class="hsTag checked">
+                                #hashtag : checked
+                                <button type="button" class="ico del">삭제</button>
+                            </span>
+                            <span class="hsTag disabled">
+                                #hashtag : disabled
+                                <button type="button" class="ico del">삭제</button>
+                            </span>
+                        </div>
+
+                    </article>
+
+                    <!-- <article>
+                        <button class="code_close"><span></span></button>
+                        <div class="ui_code">
+                            <ul class="tmenu"> 
+                                <li class="on">html</li>
+                            </ul>
+                            <div class="t_code">
+                                <div class="tcont on">
+<pre><code class="line-numbers language-html">&lt;   
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component_desc">
+                            <p></p>
+                        </div>
+                        
+
+                    </article> -->
+
+                    
+                </section>
+            </div>
+        </main>
+        <!--// container -->
+    </div>
+    
+    
+    <script type="text/javascript" src="../lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/basic.js"></script>
+    <script type="text/javascript" src="../js/sub.js"></script>
+    <script type="text/javascript" src="../js/chart.js"></script>
+    <script type="text/javascript" src="../lib/jquery/jquery-ui-1.12.1.custom.js"></script>
+    <script type="text/javascript" src="../lib/simplebar/simplebar.min.js"></script>
+    <script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../lib/aos/aos.js"></script>
+    <script type="text/javascript" src="../lib/highchart/highcharts.js"></script>
+    <script type="text/javascript" src="../lib/highchart/highcharts-more.js"></script>
+    <script type="text/javascript" src="../js/plugin.js"></script>
+
+    <script type="text/javascript" src="lib/prism/prism.js"></script>
+    <script type="text/javascript" src="js/basic.js"></script>
+    <script type="text/javascript" src="js/guide.js"></script>
+    
+    <script>
+        $(function () {
+            $('nav').find("ul > li").eq(3).addClass("on");
+        });
+    </script>
+</body>
+</html>

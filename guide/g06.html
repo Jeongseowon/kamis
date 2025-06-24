@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Component guide</title>
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="css/common.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- container -->
+            <main id="container">
+                <div class="includeJs" data-include-html="menu.html"></div>
+                <div id="content">
+                    <section>
+                        <article>
+                            <button class="code_close"><span></span></button>
+                            <div class="ui_code">
+                                <ul class="tmenu">
+                                    <li class="on">html</li>
+                                </ul>
+                                <div class="t_code">
+                                    <div class="tcont on">
+                                        <pre><code class="line-numbers language-html">&lt;table class="tb">
+    &lt;colgroup>&lt;col width="15%">&lt;col>&lt;col width="15%">&lt;col width="10%">&lt;/colgroup>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">타이틀1&lt;/th>
+        &lt;th scope="col">타이틀2&lt;/th>
+        &lt;th scope="col">타이틀3&lt;/th>
+        &lt;th scope="col">타이틀4&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+        <!-- loop -->
+      &lt;tr>
+        &lt;td aria-label="타이틀1">1&lt;/td>
+        &lt;td aria-label="타이틀2">Neque adipiscing diam&lt;/td>
+        &lt;td aria-label="타이틀3">amet&lt;/td>
+        &lt;td aria-label="타이틀4">3092&lt;/td>
+      &lt;/tr>
+      <!-- loop -->
+    &lt;/tbody>
+  &lt;/table></code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component_desc">
+                                <p>기본 테이블</p>
+                            </div>
+
+                            <table class="tb">
+                                <colgroup>
+                                    <col width="15%" />
+                                    <col />
+                                    <col width="15%" />
+                                    <col width="10%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">타이틀1</th>
+                                        <th scope="col">타이틀2</th>
+                                        <th scope="col">타이틀3</th>
+                                        <th scope="col">타이틀4</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- loop -->
+                                    <tr>
+                                        <td aria-label="타이틀1">1</td>
+                                        <td aria-label="타이틀2">Neque adipiscing diam</td>
+                                        <td aria-label="타이틀3">amet</td>
+                                        <td aria-label="타이틀4">3092</td>
+                                    </tr>
+                                    <!-- loop -->
+                                    <tr>
+                                        <td aria-label="타이틀1">2</td>
+                                        <td aria-label="타이틀2">Class aptent taciti</td>
+                                        <td aria-label="타이틀3">lacinia</td>
+                                        <td aria-label="타이틀4">12930</td>
+                                    </tr>
+                                    <tr>
+                                        <td aria-label="타이틀1">3</td>
+                                        <td aria-label="타이틀2">In scelerisque sem</td>
+                                        <td aria-label="타이틀3">tortor</td>
+                                        <td aria-label="타이틀4">5943</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                        <!-- //기본테이블 -->
+
+                        <article>
+                            <button class="code_close"><span></span></button>
+                            <div class="ui_code">
+                                <ul class="tmenu">
+                                    <li class="on">html</li>
+                                </ul>
+                                <div class="t_code">
+                                    <div class="tcont on">
+                                        <pre>
+                                            <code class="line-numbers language-html">
+                                                &lt;table class="tb">
+                                                    &lt;colgroup>
+                                                        &lt;col width="8%" />
+                                                        &lt;col width="40%" />
+                                                        &lt;col />
+                                                        &lt;col />
+                                                        &lt;col />
+                                                    &lt;/colgroup>
+                                                    &lt;thead>
+                                                        &lt;tr>
+                                                            &lt;th scope="col">&lt;/th>
+                                                            &lt;th scope="col">집합전력 자원 이름&lt;/th>
+                                                            &lt;th scope="col">시작일자&lt;/th>
+                                                            &lt;th scope="col">만료일자&lt;/th>
+                                                            &lt;th scope="col">수정/삭제&lt;/th>
+                                                        &lt;/tr>
+                                                    &lt;/thead>
+                                                    &lt;tbody>
+                                                        <!-- loop -->
+                                                        &lt;tr>
+                                                            &lt;td aria-label="">
+                                                                &lt;div class="formCheck labelNone">
+                                                                    &lt;input type="checkbox" name="chk_1" id="chk_1" />
+                                                                    &lt;label for="chk_1">선택&lt;/label>
+                                                                &lt;/div>
+                                                            &lt;/td>
+                                                            &lt;td aria-label="">데이터 제목&lt;/td>
+                                                            &lt;td aria-label="">2023-01-01&lt;/td>
+                                                            &lt;td aria-label="">2025-12-31&lt;/td>
+                                                            &lt;td aria-label="">
+                                                                &lt;div class="btnWrap">
+                                                                    &lt;button class="ic btn write">수정&lt;/button>
+                                                                    &lt;button class="ic btn del">삭제&lt;/button>
+                                                                    &lt;/div>
+                                                                &lt;/td>
+                                                        &lt;/tr>
+                                                        <!-- loop -->
+                                                        &lt;tr>
+                                                            &lt;td aria-label="">
+                                                                &lt;div class="formCheck labelNone">
+                                                                    &lt;input type="checkbox" name="chk_2" id="chk_2" />
+                                                                    &lt;label for="chk_2">선택&lt;/label>
+                                                                    &lt;/div>
+                                                            &lt;/td>
+                                                            &lt;td aria-label="">데이터 제목&lt;/td>
+                                                            &lt;td aria-label="">2023-01-01&lt;/td>
+                                                            &lt;td aria-label="">2025-12-31&lt;/td>
+                                                            &lt;td aria-label="">
+                                                                &lt;div class="btnWrap">
+                                                                    &lt;button class="ic btn write">수정&lt;/button>
+                                                                    &lt;button class="ic btn del">삭제&lt;/button>
+                                                                &lt;/div>
+                                                            &lt;/td>
+                                                        &lt;/tr>
+                                                        &lt;tr>
+                                                            &lt;td aria-label="">
+                                                                &lt;div class="formCheck labelNone">
+                                                                    &lt;input type="checkbox" name="chk_3" id="chk_3" />
+                                                                    &lt;label for="chk_3">선택&lt;/label>
+                                                                &lt;/div>
+                                                            &lt;/td>
+                                                            &lt;td aria-label="">데이터 제목&lt;/td>
+                                                            &lt;td aria-label="">2023-01-01&lt;/td>
+                                                            &lt;td aria-label="">2025-12-31&lt;/td>
+                                                            &lt;td aria-label="">
+                                                                &lt;div class="btnWrap">
+                                                                    &lt;button class="ic btn write">수정&lt;/button>
+                                                                    &lt;button class="ic btn del">삭제&lt;/button>
+                                                                &lt;/div>
+                                                            &lt;/td>
+                                                        &lt;/tr>
+                                                    &lt;/tbody>
+                                                &lt;/table>
+                                            </code>
+                                    </pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component_desc">
+                                <p>테이블 수정 삭제</p>
+                            </div>
+                            <table class="tb">
+                                <colgroup>
+                                    <col width="8%" />
+                                    <col width="40%" />
+                                    <col />
+                                    <col />
+                                    <col />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">집합전력 자원 이름</th>
+                                        <th scope="col">시작일자</th>
+                                        <th scope="col">만료일자</th>
+                                        <th scope="col">수정/삭제</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- loop -->
+                                    <tr>
+                                        <td aria-label="">
+                                            <div class="formCheck labelNone">
+                                                <input type="checkbox" name="chk_1" id="chk_1" />
+                                                <label for="chk_1">선택</label>
+                                            </div>
+                                        </td>
+                                        <td aria-label="">데이터 제목</td>
+                                        <td aria-label="">2023-01-01</td>
+                                        <td aria-label="">2025-12-31</td>
+                                        <td aria-label="">
+                                            <div class="btnWrap">
+                                                <button class="ic btn write">수정</button>
+                                                <button class="ic btn del">삭제</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- loop -->
+                                    <tr>
+                                        <td aria-label="">
+                                            <div class="formCheck labelNone">
+                                                <input type="checkbox" name="chk_2" id="chk_2" />
+                                                <label for="chk_2">선택</label>
+                                            </div>
+                                        </td>
+                                        <td aria-label="">데이터 제목</td>
+                                        <td aria-label="">2023-01-01</td>
+                                        <td aria-label="">2025-12-31</td>
+                                        <td aria-label="">
+                                            <div class="btnWrap">
+                                                <button class="ic btn write">수정</button>
+                                                <button class="ic btn del">삭제</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td aria-label="">
+                                            <div class="formCheck labelNone">
+                                                <input type="checkbox" name="chk_3" id="chk_3" />
+                                                <label for="chk_3">선택</label>
+                                            </div>
+                                        </td>
+                                        <td aria-label="">데이터 제목</td>
+                                        <td aria-label="">2023-01-01</td>
+                                        <td aria-label="">2025-12-31</td>
+                                        <td aria-label="">
+                                            <div class="btnWrap">
+                                                <button class="ic btn write">수정</button>
+                                                <button class="ic btn del">삭제</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                        <!-- //테이블 수정 삭제 -->
+
+                        <article>
+                            <button class="code_close"><span></span></button>
+                            <div class="ui_code">
+                                <ul class="tmenu">
+                                    <li class="on">html</li>
+                                </ul>
+                                <div class="t_code">
+                                    <div class="tcont on">
+                                        <pre>
+                                            <code class="line-numbers language-html">
+                                                &lt;div class="dataTbl">
+                                                    &lt;table class="tb">
+                                                        &lt;colgroup>
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;/colgroup>
+                                                            &lt;thead>
+                                                            &lt;tr>
+                                                                &lt;th scope="col">타이틀1&lt;/th>
+                                                                &lt;th scope="col">타이틀2&lt;/th>
+                                                                &lt;th scope="col">타이틀3&lt;/th>
+                                                                &lt;th scope="col">타이틀4&lt;/th>
+                                                                &lt;th scope="col">타이틀5&lt;/th>
+                                                                &lt;th scope="col">타이틀6&lt;/th>
+                                                                &lt;th scope="col">타이틀7&lt;/th>
+                                                                &lt;th scope="col">타이틀8&lt;/th>
+                                                                &lt;th scope="col">타이틀9&lt;/th>
+                                                                &lt;th scope="col">타이틀10&lt;/th>
+                                                                &lt;th scope="col">타이틀11&lt;/th>
+                                                                &lt;th scope="col">타이틀12&lt;/th>
+                                                                &lt;th scope="col">타이틀13&lt;/th>
+                                                                &lt;th scope="col">타이틀14&lt;/th>
+                                                                &lt;th scope="col">타이틀15&lt;/th>
+                                                                &lt;/tr>
+                                                                &lt;/thead>
+                                                                &lt;tbody>
+                                                            <!-- loop -->
+                                                            &lt;tr>
+                                                                &lt;td aria-label="타이틀1">0&lt;/td>
+                                                                &lt;td aria-label="타이틀2">1&lt;/td>
+                                                                &lt;td aria-label="타이틀3">2&lt;/td>
+                                                                &lt;td aria-label="타이틀4">3&lt;/td>
+                                                                &lt;td aria-label="타이틀5">4&lt;/td>
+                                                                &lt;td aria-label="타이틀6">5&lt;/td>
+                                                                &lt;td aria-label="타이틀7">6&lt;/td>
+                                                                &lt;td aria-label="타이틀8">7&lt;/td>
+                                                                &lt;td aria-label="타이틀9">8&lt;/td>
+                                                                &lt;td aria-label="타이틀10">13&lt;/td>
+                                                                &lt;td aria-label="타이틀11">13,00&lt;/td>
+                                                                &lt;td aria-label="타이틀12">163,854&lt;/td>
+                                                                &lt;td aria-label="타이틀13">124&lt;/td>
+                                                                &lt;td aria-label="타이틀14">44&lt;/td>
+                                                                &lt;td aria-label="타이틀15">87&lt;/td>
+                                                                &lt;/tr>
+                                                            <!-- loop -->
+                                                            &lt;tr>
+                                                                &lt;td aria-label="타이틀1">0&lt;/td>
+                                                                &lt;td aria-label="타이틀2">1&lt;/td>
+                                                                &lt;td aria-label="타이틀3">2&lt;/td>
+                                                                &lt;td aria-label="타이틀4">3&lt;/td>
+                                                                &lt;td aria-label="타이틀5">4&lt;/td>
+                                                                &lt;td aria-label="타이틀6">5&lt;/td>
+                                                                &lt;td aria-label="타이틀7">6&lt;/td>
+                                                                &lt;td aria-label="타이틀8">7&lt;/td>
+                                                                &lt;td aria-label="타이틀9">8&lt;/td>
+                                                                &lt;td aria-label="타이틀10">13&lt;/td>
+                                                                &lt;td aria-label="타이틀11">13,00&lt;/td>
+                                                                &lt;td aria-label="타이틀12">163,854&lt;/td>
+                                                                &lt;td aria-label="타이틀13">124&lt;/td>
+                                                                &lt;td aria-label="타이틀14">44&lt;/td>
+                                                                &lt;td aria-label="타이틀15">87&lt;/td>
+                                                            &lt;/tr>
+
+                                                            &lt;tr>
+                                                                &lt;td aria-label="타이틀1">0&lt;/td>
+                                                                &lt;td aria-label="타이틀2">1&lt;/td>
+                                                                &lt;td aria-label="타이틀3">2&lt;/td>
+                                                                &lt;td aria-label="타이틀4">3&lt;/td>
+                                                                &lt;td aria-label="타이틀5">4&lt;/td>
+                                                                &lt;td aria-label="타이틀6">5&lt;/td>
+                                                                &lt;td aria-label="타이틀7">6&lt;/td>
+                                                                &lt;td aria-label="타이틀8">7&lt;/td>
+                                                                &lt;td aria-label="타이틀9">8&lt;/td>
+                                                                &lt;td aria-label="타이틀10">13&lt;/td>
+                                                                &lt;td aria-label="타이틀11">13,00&lt;/td>
+                                                                &lt;td aria-label="타이틀12">163,854&lt;/td>
+                                                                &lt;td aria-label="타이틀13">124&lt;/td>
+                                                                &lt;td aria-label="타이틀14">44&lt;/td>
+                                                                &lt;td aria-label="타이틀15">87&lt;/td>
+                                                            &lt;/tr>      
+                                                        &lt;/tbody>
+                                                    &lt;/table>
+                                                &lt;/div>
+
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component_desc">
+                                <p>데이터 테이블</p>
+                            </div>
+
+                            <div class="dataTbl">
+                                <table class="tb">
+                                    <colgroup>
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">타이틀1</th>
+                                            <th scope="col">타이틀2</th>
+                                            <th scope="col">타이틀3</th>
+                                            <th scope="col">타이틀4</th>
+                                            <th scope="col">타이틀5</th>
+                                            <th scope="col">타이틀6</th>
+                                            <th scope="col">타이틀7</th>
+                                            <th scope="col">타이틀8</th>
+                                            <th scope="col">타이틀9</th>
+                                            <th scope="col">타이틀10</th>
+                                            <th scope="col">타이틀11</th>
+                                            <th scope="col">타이틀12</th>
+                                            <th scope="col">타이틀13</th>
+                                            <th scope="col">타이틀14</th>
+                                            <th scope="col">타이틀15</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- loop -->
+                                        <tr>
+                                            <td aria-label="타이틀1">0</td>
+                                            <td aria-label="타이틀2">1</td>
+                                            <td aria-label="타이틀3">2</td>
+                                            <td aria-label="타이틀4">3</td>
+                                            <td aria-label="타이틀5">4</td>
+                                            <td aria-label="타이틀6">5</td>
+                                            <td aria-label="타이틀7">6</td>
+                                            <td aria-label="타이틀8">7</td>
+                                            <td aria-label="타이틀9">8</td>
+                                            <td aria-label="타이틀10">13</td>
+                                            <td aria-label="타이틀11">13,00</td>
+                                            <td aria-label="타이틀12">163,854</td>
+                                            <td aria-label="타이틀13">124</td>
+                                            <td aria-label="타이틀14">44</td>
+                                            <td aria-label="타이틀15">87</td>
+                                        </tr>
+                                        <!-- loop -->
+                                        <tr>
+                                            <td aria-label="타이틀1">0</td>
+                                            <td aria-label="타이틀2">1</td>
+                                            <td aria-label="타이틀3">2</td>
+                                            <td aria-label="타이틀4">3</td>
+                                            <td aria-label="타이틀5">4</td>
+                                            <td aria-label="타이틀6">5</td>
+                                            <td aria-label="타이틀7">6</td>
+                                            <td aria-label="타이틀8">7</td>
+                                            <td aria-label="타이틀9">8</td>
+                                            <td aria-label="타이틀10">13</td>
+                                            <td aria-label="타이틀11">13,00</td>
+                                            <td aria-label="타이틀12">163,854</td>
+                                            <td aria-label="타이틀13">124</td>
+                                            <td aria-label="타이틀14">44</td>
+                                            <td aria-label="타이틀15">87</td>
+                                        </tr>
+                                        <tr>
+                                            <td aria-label="타이틀1">0</td>
+                                            <td aria-label="타이틀2">1</td>
+                                            <td aria-label="타이틀3">2</td>
+                                            <td aria-label="타이틀4">3</td>
+                                            <td aria-label="타이틀5">4</td>
+                                            <td aria-label="타이틀6">5</td>
+                                            <td aria-label="타이틀7">6</td>
+                                            <td aria-label="타이틀8">7</td>
+                                            <td aria-label="타이틀9">8</td>
+                                            <td aria-label="타이틀10">13</td>
+                                            <td aria-label="타이틀11">13,00</td>
+                                            <td aria-label="타이틀12">163,854</td>
+                                            <td aria-label="타이틀13">124</td>
+                                            <td aria-label="타이틀14">44</td>
+                                            <td aria-label="타이틀15">87</td>
+                                        </tr>
+                                        <tr>
+                                            <td aria-label="타이틀1">0</td>
+                                            <td aria-label="타이틀2">1</td>
+                                            <td aria-label="타이틀3">2</td>
+                                            <td aria-label="타이틀4">3</td>
+                                            <td aria-label="타이틀5">4</td>
+                                            <td aria-label="타이틀6">5</td>
+                                            <td aria-label="타이틀7">6</td>
+                                            <td aria-label="타이틀8">7</td>
+                                            <td aria-label="타이틀9">8</td>
+                                            <td aria-label="타이틀10">13</td>
+                                            <td aria-label="타이틀11">13,00</td>
+                                            <td aria-label="타이틀12">163,854</td>
+                                            <td aria-label="타이틀13">124</td>
+                                            <td aria-label="타이틀14">44</td>
+                                            <td aria-label="타이틀15">87</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+
+                        <article>
+                            <button class="code_close"><span></span></button>
+                            <div class="ui_code">
+                                <ul class="tmenu">
+                                    <li class="on">html</li>
+                                </ul>
+                                <div class="t_code">
+                                    <div class="tcont on">
+                                        <pre>
+                                            <code class="line-numbers language-html">
+                                                &lt;div class="dataTbl">
+                                                &lt;div class="schlistTop">
+                                                    &lt;div class="schInfo" role="region" aria-live="polite">
+                                                        &lt;p>총&lt;span class="keyword">1025&lt;/span>건&lt;/p>
+                                                        &lt;p>&lt;span class="keyword">1&lt;/span>/ 120page&lt;/p>
+                                                        &lt;/div>
+                                                    &lt;div>
+                                                        &lt;strong class="sortLabel labelNone">&lt;label for="search_result_count">목록 표시 개수&lt;/label>&lt;/strong>
+                                                        &lt;select class="sortSelect" id="search_result_count">
+                                                                    &lt;option>15개 보기&lt;/option>
+                                                                    &lt;option>10개 보기&lt;/option>
+                                                                    &lt;option>5개 보기&lt;/option>
+                                                                &lt;/select>
+                                                            &lt;/div>
+                                                    &lt;/div>
+                                                    &lt;table class="tb">
+                                                        &lt;colgroup>
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;col />
+                                                            &lt;/colgroup>
+                                                            &lt;thead>
+                                                            &lt;tr>
+                                                                &lt;th scope="col">타이틀1&lt;/th>
+                                                                &lt;th scope="col">타이틀2&lt;/th>
+                                                                &lt;th scope="col">타이틀3&lt;/th>
+                                                                &lt;th scope="col">타이틀4&lt;/th>
+                                                                &lt;th scope="col">타이틀5&lt;/th>
+                                                                &lt;th scope="col">타이틀6&lt;/th>
+                                                                &lt;th scope="col">타이틀7&lt;/th>
+                                                                &lt;th scope="col">타이틀8&lt;/th>
+                                                                &lt;th scope="col">타이틀9&lt;/th>
+                                                                &lt;th scope="col">타이틀10&lt;/th>
+                                                                &lt;th scope="col">타이틀11&lt;/th>
+                                                                &lt;th scope="col">타이틀12&lt;/th>
+                                                                &lt;th scope="col">타이틀13&lt;/th>
+                                                                &lt;th scope="col">타이틀14&lt;/th>
+                                                                &lt;th scope="col">타이틀15&lt;/th>
+                                                                &lt;/tr>
+                                                                &lt;/thead>
+                                                                &lt;tbody>
+                                                            <!-- loop -->
+                                                            &lt;tr>
+                                                                &lt;td aria-label="타이틀1">0&lt;/td>
+                                                                &lt;td aria-label="타이틀2">1&lt;/td>
+                                                                &lt;td aria-label="타이틀3">2&lt;/td>
+                                                                &lt;td aria-label="타이틀4">3&lt;/td>
+                                                                &lt;td aria-label="타이틀5">4&lt;/td>
+                                                                &lt;td aria-label="타이틀6">5&lt;/td>
+                                                                &lt;td aria-label="타이틀7">6&lt;/td>
+                                                                &lt;td aria-label="타이틀8">7&lt;/td>
+                                                                &lt;td aria-label="타이틀9">8&lt;/td>
+                                                                &lt;td aria-label="타이틀10">13&lt;/td>
+                                                                &lt;td aria-label="타이틀11">13,00&lt;/td>
+                                                                &lt;td aria-label="타이틀12">163,854&lt;/td>
+                                                                &lt;td aria-label="타이틀13">124&lt;/td>
+                                                                &lt;td aria-label="타이틀14">44&lt;/td>
+                                                                &lt;td aria-label="타이틀15">87&lt;/td>
+                                                                &lt;/tr>
+                                                            <!-- loop -->
+                                                            &lt;tr>
+                                                                &lt;td aria-label="타이틀1">0&lt;/td>
+                                                                &lt;td aria-label="타이틀2">1&lt;/td>
+                                                                &lt;td aria-label="타이틀3">2&lt;/td>
+                                                                &lt;td aria-label="타이틀4">3&lt;/td>
+                                                                &lt;td aria-label="타이틀5">4&lt;/td>
+                                                                &lt;td aria-label="타이틀6">5&lt;/td>
+                                                                &lt;td aria-label="타이틀7">6&lt;/td>
+                                                                &lt;td aria-label="타이틀8">7&lt;/td>
+                                                                &lt;td aria-label="타이틀9">8&lt;/td>
+                                                                &lt;td aria-label="타이틀10">13&lt;/td>
+                                                                &lt;td aria-label="타이틀11">13,00&lt;/td>
+                                                                &lt;td aria-label="타이틀12">163,854&lt;/td>
+                                                                &lt;td aria-label="타이틀13">124&lt;/td>
+                                                                &lt;td aria-label="타이틀14">44&lt;/td>
+                                                                &lt;td aria-label="타이틀15">87&lt;/td>
+                                                            &lt;/tr>
+
+                                                            &lt;tr>
+                                                                &lt;td aria-label="타이틀1">0&lt;/td>
+                                                                &lt;td aria-label="타이틀2">1&lt;/td>
+                                                                &lt;td aria-label="타이틀3">2&lt;/td>
+                                                                &lt;td aria-label="타이틀4">3&lt;/td>
+                                                                &lt;td aria-label="타이틀5">4&lt;/td>
+                                                                &lt;td aria-label="타이틀6">5&lt;/td>
+                                                                &lt;td aria-label="타이틀7">6&lt;/td>
+                                                                &lt;td aria-label="타이틀8">7&lt;/td>
+                                                                &lt;td aria-label="타이틀9">8&lt;/td>
+                                                                &lt;td aria-label="타이틀10">13&lt;/td>
+                                                                &lt;td aria-label="타이틀11">13,00&lt;/td>
+                                                                &lt;td aria-label="타이틀12">163,854&lt;/td>
+                                                                &lt;td aria-label="타이틀13">124&lt;/td>
+                                                                &lt;td aria-label="타이틀14">44&lt;/td>
+                                                                &lt;td aria-label="타이틀15">87&lt;/td>
+                                                            &lt;/tr>      
+                                                        &lt;/tbody>
+                                                    &lt;/table>
+                                                &lt;/div>
+
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component_desc">
+                                <p>데이터 테이블 목록형</p>
+                            </div>
+
+                            <div class="dataTbl">
+                                <div class="schlistTop">
+                                    <div class="schInfo" role="region" aria-live="polite">
+                                        <p>총<span class="keyword">1025</span>건</p>
+                                        <p><span class="keyword">1</span>/ 120page</p>
+                                    </div>
+                                    <div>
+                                        <strong class="sortLabel labelNone"><label for="search_result_count">목록 표시 개수</label></strong>
+                                        <select class="sortSelect" id="search_result_count">
+                                            <option>15개 보기</option>
+                                            <option>10개 보기</option>
+                                            <option>5개 보기</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <table class="tb">
+                                    <colgroup>
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">타이틀1</th>
+                                            <th scope="col">타이틀2</th>
+                                            <th scope="col">타이틀3</th>
+                                            <th scope="col">타이틀4</th>
+                                            <th scope="col">타이틀5</th>
+                                            <th scope="col">타이틀6</th>
+                                            <th scope="col">타이틀7</th>
+                                            <th scope="col">타이틀8</th>
+                                            <th scope="col">타이틀9</th>
+                                            <th scope="col">타이틀10</th>
+                                            <th scope="col">타이틀11</th>
+                                            <th scope="col">타이틀12</th>
+                                            <th scope="col">타이틀13</th>
+                                            <th scope="col">타이틀14</th>
+                                            <th scope="col">타이틀15</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- loop -->
+                                        <tr>
+                                            <td aria-label="타이틀1">0</td>
+                                            <td aria-label="타이틀2">1</td>
+                                            <td aria-label="타이틀3">2</td>
+                                            <td aria-label="타이틀4">3</td>
+                                            <td aria-label="타이틀5">4</td>
+                                            <td aria-label="타이틀6">5</td>
+                                            <td aria-label="타이틀7">6</td>
+                                            <td aria-label="타이틀8">7</td>
+                                            <td aria-label="타이틀9">8</td>
+                                            <td aria-label="타이틀10">13</td>
+                                            <td aria-label="타이틀11">13,00</td>
+                                            <td aria-label="타이틀12">163,854</td>
+                                            <td aria-label="타이틀13">124</td>
+                                            <td aria-label="타이틀14">44</td>
+                                            <td aria-label="타이틀15">87</td>
+                                        </tr>
+                                        <!-- loop -->
+                                        <tr>
+                                            <td aria-label="타이틀1">0</td>
+                                            <td aria-label="타이틀2">1</td>
+                                            <td aria-label="타이틀3">2</td>
+                                            <td aria-label="타이틀4">3</td>
+                                            <td aria-label="타이틀5">4</td>
+                                            <td aria-label="타이틀6">5</td>
+                                            <td aria-label="타이틀7">6</td>
+                                            <td aria-label="타이틀8">7</td>
+                                            <td aria-label="타이틀9">8</td>
+                                            <td aria-label="타이틀10">13</td>
+                                            <td aria-label="타이틀11">13,00</td>
+                                            <td aria-label="타이틀12">163,854</td>
+                                            <td aria-label="타이틀13">124</td>
+                                            <td aria-label="타이틀14">44</td>
+                                            <td aria-label="타이틀15">87</td>
+                                        </tr>
+                                        <tr>
+                                            <td aria-label="타이틀1">0</td>
+                                            <td aria-label="타이틀2">1</td>
+                                            <td aria-label="타이틀3">2</td>
+                                            <td aria-label="타이틀4">3</td>
+                                            <td aria-label="타이틀5">4</td>
+                                            <td aria-label="타이틀6">5</td>
+                                            <td aria-label="타이틀7">6</td>
+                                            <td aria-label="타이틀8">7</td>
+                                            <td aria-label="타이틀9">8</td>
+                                            <td aria-label="타이틀10">13</td>
+                                            <td aria-label="타이틀11">13,00</td>
+                                            <td aria-label="타이틀12">163,854</td>
+                                            <td aria-label="타이틀13">124</td>
+                                            <td aria-label="타이틀14">44</td>
+                                            <td aria-label="타이틀15">87</td>
+                                        </tr>
+                                        <tr>
+                                            <td aria-label="타이틀1">0</td>
+                                            <td aria-label="타이틀2">1</td>
+                                            <td aria-label="타이틀3">2</td>
+                                            <td aria-label="타이틀4">3</td>
+                                            <td aria-label="타이틀5">4</td>
+                                            <td aria-label="타이틀6">5</td>
+                                            <td aria-label="타이틀7">6</td>
+                                            <td aria-label="타이틀8">7</td>
+                                            <td aria-label="타이틀9">8</td>
+                                            <td aria-label="타이틀10">13</td>
+                                            <td aria-label="타이틀11">13,00</td>
+                                            <td aria-label="타이틀12">163,854</td>
+                                            <td aria-label="타이틀13">124</td>
+                                            <td aria-label="타이틀14">44</td>
+                                            <td aria-label="타이틀15">87</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+
+                        <article>
+                            <button class="code_close"><span></span></button>
+                            <div class="ui_code">
+                                <ul class="tmenu">
+                                    <li class="on">html</li>
+                                </ul>
+                                <div class="t_code">
+                                    <div class="tcont on">
+                                        <pre><code class="line-numbers language-html">
+    &lt;div class="mdTbl">
+        &lt;table class="tb">
+            &lt;colgroup>
+                &lt;col width="15%" />
+                &lt;col />
+                &lt;col width="15%" />
+                &lt;col width="10%" />
+            &lt;/colgroup>
+        &lt;thead>
+            &lt;tr>
+                    &lt;th scope="col">타이틀1&lt;/th>
+                    &lt;th scope="col">타이틀2&lt;/th>
+                    &lt;th scope="col">타이틀3&lt;/th>
+                    &lt;th scope="col">타이틀4&lt;/th>
+                &lt;/tr>
+            &lt;/thead>
+            &lt;tbody>
+                <!-- loop -->
+                &lt;tr>
+                    &lt;td aria-label="타이틀1">1&lt;/td>
+                    &lt;td aria-label="타이틀2">Neque adipiscing diam&lt;/td>
+                    &lt;td aria-label="타이틀3">amet&lt;/td>
+                    &lt;td aria-label="타이틀4">3092&lt;/td>
+                &lt;/tr>
+                <!-- loop -->
+                &lt;&lt;tr>
+                    &lt;td aria-label="타이틀1">2&lt;/td>
+                    &lt;td aria-label="타이틀2">Class aptent taciti&lt;/td>
+                    &lt;td aria-label="타이틀3">lacinia&lt;/td>
+                    &lt;td aria-label="타이틀4">12930&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td aria-label="타이틀1">3&lt;/td>
+                    &lt;td aria-label="타이틀2">In scelerisque sem&lt;/td>
+                    &lt;td aria-label="타이틀3">tortor&lt;/td>
+                    &lt;td aria-label="타이틀4">5943&lt;/td>
+                &lt;/tr>
+            &lt;/tbody>
+        &lt;/table>
+    &lt;/div>
+</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component_desc">
+                                <p>모달 테이블</p>
+                            </div>
+                            <div class="mdTbl">
+                                <table class="tb">
+                                    <colgroup>
+                                        <col width="15%" />
+                                        <col />
+                                        <col width="15%" />
+                                        <col width="10%" />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">타이틀1</th>
+                                            <th scope="col">타이틀2</th>
+                                            <th scope="col">타이틀3</th>
+                                            <th scope="col">타이틀4</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- loop -->
+                                        <tr>
+                                            <td aria-label="타이틀1">1</td>
+                                            <td aria-label="타이틀2">Neque adipiscing diam</td>
+                                            <td aria-label="타이틀3">amet</td>
+                                            <td aria-label="타이틀4">3092</td>
+                                        </tr>
+                                        <!-- loop -->
+                                        <tr>
+                                            <td aria-label="타이틀1">2</td>
+                                            <td aria-label="타이틀2">Class aptent taciti</td>
+                                            <td aria-label="타이틀3">lacinia</td>
+                                            <td aria-label="타이틀4">12930</td>
+                                        </tr>
+                                        <tr>
+                                            <td aria-label="타이틀1">3</td>
+                                            <td aria-label="타이틀2">In scelerisque sem</td>
+                                            <td aria-label="타이틀3">tortor</td>
+                                            <td aria-label="타이틀4">5943</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </main>
+            <!--// container -->
+        </div>
+
+        <script type="text/javascript" src="../lib/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript" src="../js/sub.js"></script>
+        <script type="text/javascript" src="../js/basic.js"></script>
+        <script type="text/javascript" src="../js/chart.js"></script>
+        <script type="text/javascript" src="../lib/jquery/jquery-ui-1.12.1.custom.js"></script>
+        <script type="text/javascript" src="../lib/simplebar/simplebar.min.js"></script>
+        <script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="../lib/aos/aos.js"></script>
+        <script type="text/javascript" src="../lib/highchart/highcharts.js"></script>
+        <script type="text/javascript" src="../lib/highchart/highcharts-more.js"></script>
+        <script type="text/javascript" src="../js/plugin.js"></script>
+
+        <script type="text/javascript" src="lib/prism/prism.js"></script>
+        <script type="text/javascript" src="js/basic.js"></script>
+        <script type="text/javascript" src="js/guide.js"></script>
+
+        <script>
+            $(function () {
+                $("nav").find("ul > li").eq(6).addClass("on");
+            });
+        </script>
+    </body>
+</html>
