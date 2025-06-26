@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>E:모음 VPP 통합발전소</title>
+        <link rel="stylesheet" type="text/css" href="../css/common.css" />
+        <link rel="stylesheet" type="text/css" href="../css/main.css" />
+        <link rel="stylesheet" type="text/css" href="../css/device.css" />
+    </head>
+    <body>
+        <!-- wrapper S -->
+        <div id="wrapper">
+            <div data-include-html="../include/top.html" class="includeJs"></div>
+            <div data-include-html="../include/menu.html" class="includeJs"></div>
+            <!-- container S -->
+            <div id="container">
+                <div id="content" class="main">
+                    <div data-include-html="../include/tside.html" class="includeJs"></div>
+                    
+                    <div class="schWrap box">
+                        <label for="">거래일자</label>
+                        <div class="calendar_input">
+                            <input id="searchEndDate" name="searchEndDate" type="text" value="" placeholder="yyyy-mm-dd" />
+                        </div>
+                        <button type="submit" class="btn srch">검색</button>
+                    </div>
+
+                    <section class="divider">
+                        <article> 
+                            <fieldset>
+                                <h2>하루전실적</h2>
+                                <div class="box">
+                                    <div id="chart3"></div>
+                                </div>
+                            </fieldset>  
+                        </article>
+                            
+                            
+                        <article>                
+                            <fieldset>
+                                <div class="box s03">
+                                    <strong class="ic i02">예상정산금</strong>
+                                    <div class="price">
+                                        <p>이전대비<span class="plus">79%</span></p>
+                                        <strong>11,092,078<em>원</em></strong>
+                                    </div>    
+                                </div>
+                                
+                                <div class="box s03">
+                                    <strong class="ic i02">전력량정산금</strong>
+                                    <div class="price">
+                                        <p>이전대비<span class="minus">79%</span></p>
+                                        <strong>101,092,078<em>원</em></strong>
+                                    </div>    
+                                </div>
+                            </fieldset>
+                        </article>
+                    </section>
+                    <section class="divider">
+                        <article> 
+                            <fieldset>
+                                <h2>실시간현황</h2>
+                                <div class="dBlock">
+                                    <h3>초기입찰</h3>
+                                    <div class="box">
+                                        <span class="ct s01">예측</span>
+                                        <dl>
+                                            <dd><strong class="ic i01">9.0 <em>MW</em></strong></dd>
+                                            <dd><strong class="ic i02">1,344<em>원</em></strong></dd>
+                                        </dl>
+                                    </div>
+                                    <div class="box">
+                                        
+                                        <span class="ct s02">입찰</span>
+                                        <dl>
+                                            <dd><strong class="ic i01">9.0 <em>MW</em></strong></dd>
+                                            <dd><strong class="ic i02">1,344<em>원</em></strong></dd>
+                                        </dl>
+                                    </div>
+                                    <div class="box">
+                                        <span class="ct s03">낙찰</span>
+                                        <dl>
+                                            <dd><strong class="ic i01">9.0 <em>MW</em></strong></dd>
+                                            <dd><strong class="ic i02">1,344<em>원</em></strong></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="dBlock">
+                                    <h3>변경입찰<span>(누적)</span></h3>
+                                    <div class="box">
+                                        <span class="ct s01">예측</span>
+                                        <dl>
+                                            <dd><strong class="ic i01">9.0 <em>MW</em></strong></dd>
+                                            <dd><strong class="ic i02">1,344<em>원</em></strong></dd>
+                                        </dl>
+                                    </div>
+                                    <div class="box">
+                                        
+                                        <span class="ct s02">입찰</span>
+                                        <dl>
+                                            <dd><strong class="ic i01">9.0 <em>MW</em></strong></dd>
+                                            <dd><strong class="ic i02">1,344<em>원</em></strong></dd>
+                                        </dl>
+                                    </div>
+                                    <div class="box">
+                                        <span class="ct s03">낙찰</span>
+                                        <dl>
+                                            <dd><strong class="ic i01">9.0 <em>MW</em></strong></dd>
+                                            <dd><strong class="ic i02">1,344<em>원</em></strong></dd>
+                                        </dl>
+                                    </div>
+                                    </div>
+                                </div>
+                            </fieldset>  
+                        </article>
+                    </section>
+                </div>
+            </div>
+            <!-- container S -->
+        </div>
+        <!-- wrapper E -->
+        <script type="text/javascript" src="../lib/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="../lib/jquery/jquery-ui-1.12.1.custom.js"></script>
+        <script type="text/javascript" src="../lib/simplebar/simplebar.min.js"></script>
+        <script type="text/javascript" src="../lib/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="../lib/aos/aos.js"></script>
+        <script type="text/javascript" src="../lib/echart/echarts.min.js"></script>
+        <script type="text/javascript" src="../lib/plugin.js"></script>
+        <script type="text/javascript" src="../js/basic.js"></script>
+
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript" src="../js/chart.js"></script>
+        <script type="text/javascript" src="../js/main.js"></script>
+
+        <script>
+            
+            $(function () {
+                fncDate("searchStartDate", "searchEndDate");
+                fncMonth("monthpicker");
+                fncTimeDate("searchStartTime", "searchEndTime");
+            });
+        </script>
+    </body>
+</html>
